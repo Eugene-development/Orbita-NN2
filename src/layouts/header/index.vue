@@ -541,10 +541,10 @@
     </div>
     <div class="bg-white">
       <div class="py-2 px-3 sm:py-6 sm:px-6 lg:px-12 lg:flex lg:justify-between flex items-center ">
-        <div class="mr-28 max-w-xs">
+        <div class="mr-12 max-w-xs">
           <NuxtLink to="/">
             <span class="sr-only">База стройматериалов Орбита-Строй</span>
-            <img alt="logo" class="h-24" src="https://орбита-строй.рф/storage/img/logo.png">
+            <img alt="logo" class="h-24" src="https://lumen-image-bucket.s3.eu-central-1.amazonaws.com/logo/logo.png">
           </NuxtLink>
           <span
             class="mt-2 w-full inline-flex items-center justify-center py-0.5 rounded text-xs font-medium bg-red-900 text-yellowGray-50">
@@ -674,7 +674,7 @@
               <div>
                 <div class="px-3 py-5 sm:p-6">
                   <dt class="text-base font-normal text-gray-900 border-b-2 border-gray-600">
-                    Прайс
+                    Сантехника
                   </dt>
                   <dd class="mt-1 flex justify-between items-baseline md:block lg:flex">
                     <div class="flex items-baseline text-2xl font-semibold text-red-700">
@@ -717,9 +717,9 @@
             ```
           -->
           <div>
-            <div class="flow-root mt-2 ml-2">
+            <div class="flow-root mt-2 ml-3">
               <ul class="-my-5 divide-y divide-gray-200">
-                <li class="py-2">
+                <li class="py-1">
                   <div class="relative focus-within:ring-2 focus-within:ring-red-500">
                     <div class="mt-3 text-base flex">
                       <svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor"
@@ -729,7 +729,7 @@
                           stroke-linecap="round" stroke-linejoin="round"
                           stroke-width="2"/>
                       </svg>
-                      <p class="ml-2 text-xl text-red-900 animate-pulse">
+                      <p class="ml-2 text-base text-red-900 animate-pulse">
                         8 (930) 288-88-62
                       </p>
                     </div>
@@ -746,7 +746,7 @@
                       </p>
                     </div>
                     <div class="mt-3 text-base flex">
-                      <svg aria-hidden="true" class="h-6 w-6 " fill="none" stroke="currentColor"
+                      <svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor"
                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
@@ -754,7 +754,7 @@
                           stroke-width="2"/>
                       </svg>
 
-                      <p class="ml-3">
+                      <p class="ml-2">
                         orbita88yuliya@mail.ru
                       </p>
                     </div>
