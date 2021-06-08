@@ -33,11 +33,13 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/vue-lodash'
   ],
   /*
   ** Nuxt.js dev-modules
   */
   buildModules: [
+    '@nuxtjs/tailwindcss'
   ],
   /*
   ** Nuxt.js modules
