@@ -33,10 +33,7 @@
               <ul class="mt-4 space-y-4">
                 <li>
                   <p class="text-base text-gray-600 hover:text-white">
-                    г. Дзержинск, пр. Ленина, д. 121-В
-                  </p>
-                  <p class="text-base text-gray-600 hover:text-white">
-                    г. Дзержинск, ул. Космонавтов, 4-Б
+                    г. Нижний Новгород
                   </p>
                 </li>
                 <li >

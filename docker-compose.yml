@@ -8,7 +8,7 @@ services:
     container_name: "${COMPOSE_PROJECT_NAME}_NUXT"
     restart: always
     ports:
-      - "3100:3100"
+      - "4112:4112"
     command:
       "npm run start"
 
@@ -18,7 +18,7 @@ services:
     image: nginx:1.13
     container_name: "${COMPOSE_PROJECT_NAME}_NGINX"
     ports:
-      - "3105:80"
+      - "4117:80"
     volumes:
       - ./:/var/www
       - ./docker/nginx/conf.d/:/etc/nginx/conf.d/
