@@ -46,15 +46,13 @@
         </li>
         <li>
           <div class="flex items-center">
-            <svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor"
-                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                stroke-linecap="round" stroke-linejoin="round"
-                stroke-width="2"></path>
+            <svg aria-hidden="true" class="w-6 h-6"  fill="none" stroke="currentColor"
+                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"  >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
             </svg>
             <p class="ml-2 text-lg">
-              Избранное
+              Избранное (6)
             </p>
           </div>
         </li>
@@ -79,7 +77,7 @@
     </nav>
 
 
-    <div class="relative bg-yellow-200">
+    <div class="relative bg-yellow-300 shadow-lg">
       <div class="flex justify-between items-left mx-8 px-8 py-3 sm:px-6 md:justify-start md:space-x-10">
         <div class="flex justify-start lg:w-0 lg:flex-1">
             <NuxtLink to="/">
@@ -416,18 +414,13 @@
               </div>
             </div>
           </div>
-
-
-
-
-
         </nav>
         <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
           <a class="whitespace-nowrap text-base font-medium text-gray-600 hover:text-gray-900" href="#">
             Регистрация
           </a>
           <a
-            class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-3 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-red-800 hover:bg-red-600"
+            class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-3 py-1 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-red-800 hover:bg-red-600"
             href="#">
             Вход
           </a>
@@ -628,7 +621,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto text-center">
           <h2 class="text-3xl font-extrabold text-gray-800 sm:text-4xl">
-            База строительных и отделочных материалов "Орбита-строй"
+            Интернет-магазин строительных и отделочных материалов "Орбита-строй"
           </h2>
 <!--          <p class="mt-3 text-xl text-gray-500 sm:mt-4">-->
 <!--            Строительные и отделочные материалы оптом и в розницу-->
