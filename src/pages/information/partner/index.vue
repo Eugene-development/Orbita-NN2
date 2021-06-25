@@ -1,5 +1,7 @@
 <template>
-
+<p>
+  партнёры
+</p>
 </template>
 
 <script>

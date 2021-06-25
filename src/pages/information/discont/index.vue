@@ -1,5 +1,5 @@
 <template>
-
+<p>скидки</p>
 </template>
 
 <script>

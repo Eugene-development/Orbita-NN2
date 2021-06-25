@@ -1,5 +1,5 @@
 <template>
-
+<p>доставка</p>
 </template>
 
 <script>

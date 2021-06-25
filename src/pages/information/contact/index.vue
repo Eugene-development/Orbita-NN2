@@ -1,5 +1,5 @@
 <template>
-
+<p>контакты</p>
 </template>
 
 <script>

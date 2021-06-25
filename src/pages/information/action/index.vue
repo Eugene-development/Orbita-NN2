@@ -1,5 +1,5 @@
 <template>
-
+<p>Акции</p>
 </template>
 
 <script>

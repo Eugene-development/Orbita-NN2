@@ -1,5 +1,5 @@
 <template>
-
+<p>Блог</p>
 </template>
 
 <script>

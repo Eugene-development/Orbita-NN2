@@ -1,5 +1,5 @@
 <template>
-
+<p>карта</p>
 </template>
 
 <script>

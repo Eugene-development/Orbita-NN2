@@ -1,5 +1,5 @@
 <template>
-
+<p>Клиентам</p>
 </template>
 
 <script>

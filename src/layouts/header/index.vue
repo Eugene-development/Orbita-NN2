@@ -76,6 +76,23 @@
 <!--      </div>-->
     </nav>
 
+<!--скошенный BG-->
+<!--    <div class="relative px-6 py-10 bg-yellow-100 overflow-hidden  sm:px-12 sm:py-20">-->
+<!--      <div aria-hidden="true" class="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0">-->
+<!--        <svg class="absolute inset-0 h-full w-full" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1463 360">-->
+<!--          <path class="text-yellow-200 text-opacity-40" fill="currentColor" d="M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z" />-->
+<!--          <path class="text-yellow-300 text-opacity-40" fill="currentColor" d="M-217.088 544.086L1544.761 72l134.327 501.316-1761.849 472.086z" />-->
+<!--        </svg>-->
+<!--      </div>-->
+<!--      <div class="relative">-->
+<!--        <div class="sm:text-center">-->
+<!--          <h2 class="text-3xl font-extrabold text-gray-800 sm:text-4xl">-->
+<!--            Интернет-магазин строительных и отделочных материалов "Орбита-строй"-->
+<!--          </h2>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
 
     <div class="relative bg-yellow-300 shadow-lg">
       <div class="flex justify-between items-left mx-8 px-8 py-3 sm:px-6 md:justify-start md:space-x-10">
@@ -103,206 +120,211 @@
           </button>
         </div>
         <nav class="hidden md:flex space-x-10">
-          <a class="pt-2 text-base font-medium text-gray-600 hover:text-gray-900" href="#">
+          <NuxtLink class="pt-2 text-base font-medium text-gray-600 hover:text-gray-900"
+                    to="/">
             Главная
-          </a>
-          <a class="pt-2 text-base font-medium text-gray-600 hover:text-gray-900" href="#">
+          </NuxtLink>
+          <NuxtLink class="pt-2 text-base font-medium text-gray-600 hover:text-gray-900"
+                    to="#">
             Оплата
-          </a>
-          <a class="pt-2 text-base font-medium text-gray-600 hover:text-gray-900" href="#">
+          </NuxtLink>
+          <NuxtLink class="pt-2 text-base font-medium text-gray-600 hover:text-gray-900"
+                    to="#">
             Доставка
-          </a>
-          <a class="pt-2 text-base font-medium text-gray-600 hover:text-gray-900" href="#">
+          </NuxtLink>
+          <NuxtLink class="pt-2 text-base font-medium text-gray-600 hover:text-gray-900"
+                    to="#">
             Грузчики
-          </a>
-          <a class="pt-2 text-base font-medium text-gray-600 hover:text-gray-900" href="#">
+          </NuxtLink>
+          <NuxtLink class="pt-2 text-base font-medium text-gray-600 hover:text-gray-900"
+                    to="#">
             Контакты
-          </a>
+          </NuxtLink>
 
-          <div class="pt-2 relative">
-            <!-- Item active: "text-gray-900", Item inactive: "text-gray-600" -->
-            <button aria-expanded="false"
-                    class="text-gray-600 group rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
-                    type="button">
-              <span>Советы</span>
-              <!--
-                Heroicon name: solid/chevron-down
+<!--          <div class="pt-2 relative">-->
+<!--            &lt;!&ndash; Item active: "text-gray-900", Item inactive: "text-gray-600" &ndash;&gt;-->
+<!--            <button aria-expanded="false"-->
+<!--                    class="text-gray-600 group rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"-->
+<!--                    type="button">-->
+<!--              <span>Советы</span>-->
+<!--              &lt;!&ndash;-->
+<!--                Heroicon name: solid/chevron-down-->
 
-                Item active: "text-gray-600", Item inactive: "text-gray-400"
-              -->
-              <svg aria-hidden="true" class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-600"
-                   fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path clip-rule="evenodd"
-                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                      fill-rule="evenodd"/>
-              </svg>
-            </button>
+<!--                Item active: "text-gray-600", Item inactive: "text-gray-400"-->
+<!--              &ndash;&gt;-->
+<!--              <svg aria-hidden="true" class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-600"-->
+<!--                   fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
+<!--                <path clip-rule="evenodd"-->
+<!--                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"-->
+<!--                      fill-rule="evenodd"/>-->
+<!--              </svg>-->
+<!--            </button>-->
 
-            <!--
-              'Solutions' flyout menu, show/hide based on flyout menu state.
+<!--            &lt;!&ndash;-->
+<!--              'Solutions' flyout menu, show/hide based on flyout menu state.-->
 
-              Entering: "transition ease-out duration-200"
-                From: "opacity-0 translate-y-1"
-                To: "opacity-100 translate-y-0"
-              Leaving: "transition ease-in duration-150"
-                From: "opacity-100 translate-y-0"
-                To: "opacity-0 translate-y-1"
-            -->
-            <div v-if="false"
-                 class="absolute z-10 -ml-4 mt-3 transform w-screen max-w-md lg:max-w-2xl lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
-              <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-                <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
-                  <a class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50" href="#">
-                    <div
-                      class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-red-500 text-white sm:h-12 sm:w-12">
-                      <!-- Heroicon name: outline/chart-bar -->
-                      <svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor"
-                           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                          stroke-linecap="round" stroke-linejoin="round"
-                          stroke-width="2"/>
-                      </svg>
-                    </div>
-                    <div class="ml-4">
-                      <p class="text-base font-medium text-gray-900">
-                        Analytics
-                      </p>
-                      <p class="mt-1 text-sm text-gray-600">
-                        Get a better understanding of where your traffic is coming from.
-                      </p>
-                    </div>
-                  </a>
+<!--              Entering: "transition ease-out duration-200"-->
+<!--                From: "opacity-0 translate-y-1"-->
+<!--                To: "opacity-100 translate-y-0"-->
+<!--              Leaving: "transition ease-in duration-150"-->
+<!--                From: "opacity-100 translate-y-0"-->
+<!--                To: "opacity-0 translate-y-1"-->
+<!--            &ndash;&gt;-->
+<!--            <div v-if="false"-->
+<!--                 class="absolute z-10 -ml-4 mt-3 transform w-screen max-w-md lg:max-w-2xl lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">-->
+<!--              <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">-->
+<!--                <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">-->
+<!--                  <a class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50" href="#">-->
+<!--                    <div-->
+<!--                      class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-red-500 text-white sm:h-12 sm:w-12">-->
+<!--                      &lt;!&ndash; Heroicon name: outline/chart-bar &ndash;&gt;-->
+<!--                      <svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor"-->
+<!--                           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">-->
+<!--                        <path-->
+<!--                          d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"-->
+<!--                          stroke-linecap="round" stroke-linejoin="round"-->
+<!--                          stroke-width="2"/>-->
+<!--                      </svg>-->
+<!--                    </div>-->
+<!--                    <div class="ml-4">-->
+<!--                      <p class="text-base font-medium text-gray-900">-->
+<!--                        Analytics-->
+<!--                      </p>-->
+<!--                      <p class="mt-1 text-sm text-gray-600">-->
+<!--                        Get a better understanding of where your traffic is coming from.-->
+<!--                      </p>-->
+<!--                    </div>-->
+<!--                  </a>-->
 
-                  <a class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50" href="#">
-                    <div
-                      class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-red-500 text-white sm:h-12 sm:w-12">
-                      <!-- Heroicon name: outline/cursor-click -->
-                      <svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor"
-                           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
-                          stroke-linecap="round" stroke-linejoin="round"
-                          stroke-width="2"/>
-                      </svg>
-                    </div>
-                    <div class="ml-4">
-                      <p class="text-base font-medium text-gray-900">
-                        Engagement
-                      </p>
-                      <p class="mt-1 text-sm text-gray-600">
-                        Speak directly to your customers in a more meaningful way.
-                      </p>
-                    </div>
-                  </a>
+<!--                  <a class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50" href="#">-->
+<!--                    <div-->
+<!--                      class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-red-500 text-white sm:h-12 sm:w-12">-->
+<!--                      &lt;!&ndash; Heroicon name: outline/cursor-click &ndash;&gt;-->
+<!--                      <svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor"-->
+<!--                           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">-->
+<!--                        <path-->
+<!--                          d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"-->
+<!--                          stroke-linecap="round" stroke-linejoin="round"-->
+<!--                          stroke-width="2"/>-->
+<!--                      </svg>-->
+<!--                    </div>-->
+<!--                    <div class="ml-4">-->
+<!--                      <p class="text-base font-medium text-gray-900">-->
+<!--                        Engagement-->
+<!--                      </p>-->
+<!--                      <p class="mt-1 text-sm text-gray-600">-->
+<!--                        Speak directly to your customers in a more meaningful way.-->
+<!--                      </p>-->
+<!--                    </div>-->
+<!--                  </a>-->
 
-                  <a class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50" href="#">
-                    <div
-                      class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-red-500 text-white sm:h-12 sm:w-12">
-                      <!-- Heroicon name: outline/shield-check -->
-                      <svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor"
-                           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                          stroke-linecap="round" stroke-linejoin="round"
-                          stroke-width="2"/>
-                      </svg>
-                    </div>
-                    <div class="ml-4">
-                      <p class="text-base font-medium text-gray-900">
-                        Security
-                      </p>
-                      <p class="mt-1 text-sm text-gray-600">
-                        Your customers&#039; data will be safe and secure.
-                      </p>
-                    </div>
-                  </a>
+<!--                  <a class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50" href="#">-->
+<!--                    <div-->
+<!--                      class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-red-500 text-white sm:h-12 sm:w-12">-->
+<!--                      &lt;!&ndash; Heroicon name: outline/shield-check &ndash;&gt;-->
+<!--                      <svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor"-->
+<!--                           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">-->
+<!--                        <path-->
+<!--                          d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"-->
+<!--                          stroke-linecap="round" stroke-linejoin="round"-->
+<!--                          stroke-width="2"/>-->
+<!--                      </svg>-->
+<!--                    </div>-->
+<!--                    <div class="ml-4">-->
+<!--                      <p class="text-base font-medium text-gray-900">-->
+<!--                        Security-->
+<!--                      </p>-->
+<!--                      <p class="mt-1 text-sm text-gray-600">-->
+<!--                        Your customers&#039; data will be safe and secure.-->
+<!--                      </p>-->
+<!--                    </div>-->
+<!--                  </a>-->
 
-                  <a class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50" href="#">
-                    <div
-                      class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-red-500 text-white sm:h-12 sm:w-12">
-                      <!-- Heroicon name: outline/view-grid -->
-                      <svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor"
-                           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
-                          stroke-linecap="round" stroke-linejoin="round"
-                          stroke-width="2"/>
-                      </svg>
-                    </div>
-                    <div class="ml-4">
-                      <p class="text-base font-medium text-gray-900">
-                        Integrations
-                      </p>
-                      <p class="mt-1 text-sm text-gray-600">
-                        Connect with third-party tools that you&#039;re already using.
-                      </p>
-                    </div>
-                  </a>
+<!--                  <a class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50" href="#">-->
+<!--                    <div-->
+<!--                      class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-red-500 text-white sm:h-12 sm:w-12">-->
+<!--                      &lt;!&ndash; Heroicon name: outline/view-grid &ndash;&gt;-->
+<!--                      <svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor"-->
+<!--                           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">-->
+<!--                        <path-->
+<!--                          d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"-->
+<!--                          stroke-linecap="round" stroke-linejoin="round"-->
+<!--                          stroke-width="2"/>-->
+<!--                      </svg>-->
+<!--                    </div>-->
+<!--                    <div class="ml-4">-->
+<!--                      <p class="text-base font-medium text-gray-900">-->
+<!--                        Integrations-->
+<!--                      </p>-->
+<!--                      <p class="mt-1 text-sm text-gray-600">-->
+<!--                        Connect with third-party tools that you&#039;re already using.-->
+<!--                      </p>-->
+<!--                    </div>-->
+<!--                  </a>-->
 
-                  <a class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50" href="#">
-                    <div
-                      class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-red-500 text-white sm:h-12 sm:w-12">
-                      <!-- Heroicon name: outline/refresh -->
-                      <svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor"
-                           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
-                          stroke-linecap="round" stroke-linejoin="round"
-                          stroke-width="2"/>
-                      </svg>
-                    </div>
-                    <div class="ml-4">
-                      <p class="text-base font-medium text-gray-900">
-                        Automations
-                      </p>
-                      <p class="mt-1 text-sm text-gray-600">
-                        Build strategic funnels that will drive your customers to convert
-                      </p>
-                    </div>
-                  </a>
+<!--                  <a class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50" href="#">-->
+<!--                    <div-->
+<!--                      class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-red-500 text-white sm:h-12 sm:w-12">-->
+<!--                      &lt;!&ndash; Heroicon name: outline/refresh &ndash;&gt;-->
+<!--                      <svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor"-->
+<!--                           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">-->
+<!--                        <path-->
+<!--                          d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"-->
+<!--                          stroke-linecap="round" stroke-linejoin="round"-->
+<!--                          stroke-width="2"/>-->
+<!--                      </svg>-->
+<!--                    </div>-->
+<!--                    <div class="ml-4">-->
+<!--                      <p class="text-base font-medium text-gray-900">-->
+<!--                        Automations-->
+<!--                      </p>-->
+<!--                      <p class="mt-1 text-sm text-gray-600">-->
+<!--                        Build strategic funnels that will drive your customers to convert-->
+<!--                      </p>-->
+<!--                    </div>-->
+<!--                  </a>-->
 
-                  <a class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50" href="#">
-                    <div
-                      class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-red-500 text-white sm:h-12 sm:w-12">
-                      <!-- Heroicon name: outline/document-report -->
-                      <svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor"
-                           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                          stroke-linecap="round" stroke-linejoin="round"
-                          stroke-width="2"/>
-                      </svg>
-                    </div>
-                    <div class="ml-4">
-                      <p class="text-base font-medium text-gray-900">
-                        Reports
-                      </p>
-                      <p class="mt-1 text-sm text-gray-600">
-                        Get detailed reports that will help you make more informed decisions
-                      </p>
-                    </div>
-                  </a>
-                </div>
-                <div class="p-5 bg-gray-50 sm:p-8">
-                  <a class="-m-3 p-3 flow-root rounded-md hover:bg-gray-100" href="#">
-                    <div class="flex items-center">
-                      <div class="text-base font-medium text-gray-900">
-                        Enterprise
-                      </div>
-                      <span
-                        class="ml-3 inline-flex items-center px-3 py-0.5 rounded-full text-xs font-medium leading-5 bg-red-100 text-red-800">
-                    New
-                  </span>
-                    </div>
-                    <p class="mt-1 text-sm text-gray-600">
-                      Empower your entire team with even more advanced tools.
-                    </p>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+<!--                  <a class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50" href="#">-->
+<!--                    <div-->
+<!--                      class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-red-500 text-white sm:h-12 sm:w-12">-->
+<!--                      &lt;!&ndash; Heroicon name: outline/document-report &ndash;&gt;-->
+<!--                      <svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor"-->
+<!--                           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">-->
+<!--                        <path-->
+<!--                          d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"-->
+<!--                          stroke-linecap="round" stroke-linejoin="round"-->
+<!--                          stroke-width="2"/>-->
+<!--                      </svg>-->
+<!--                    </div>-->
+<!--                    <div class="ml-4">-->
+<!--                      <p class="text-base font-medium text-gray-900">-->
+<!--                        Reports-->
+<!--                      </p>-->
+<!--                      <p class="mt-1 text-sm text-gray-600">-->
+<!--                        Get detailed reports that will help you make more informed decisions-->
+<!--                      </p>-->
+<!--                    </div>-->
+<!--                  </a>-->
+<!--                </div>-->
+<!--                <div class="p-5 bg-gray-50 sm:p-8">-->
+<!--                  <a class="-m-3 p-3 flow-root rounded-md hover:bg-gray-100" href="#">-->
+<!--                    <div class="flex items-center">-->
+<!--                      <div class="text-base font-medium text-gray-900">-->
+<!--                        Enterprise-->
+<!--                      </div>-->
+<!--                      <span-->
+<!--                        class="ml-3 inline-flex items-center px-3 py-0.5 rounded-full text-xs font-medium leading-5 bg-red-100 text-red-800">-->
+<!--                    New-->
+<!--                  </span>-->
+<!--                    </div>-->
+<!--                    <p class="mt-1 text-sm text-gray-600">-->
+<!--                      Empower your entire team with even more advanced tools.-->
+<!--                    </p>-->
+<!--                  </a>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
 
 <!--          <div class="pt-2 relative">-->
 <!--            &lt;!&ndash; Item active: "text-gray-900", Item inactive: "text-gray-600" &ndash;&gt;-->
@@ -616,6 +638,10 @@
       </div>
     </div>
 
+
+
+
+
     <!-- This example requires Tailwind CSS v2.0+ -->
     <div class="bg-yellow-50 pt-6 sm:pt-8">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -871,7 +897,7 @@
       <ol class="flex items-center space-x-4 mx-auto">
         <li>
           <div class="flex items-center">
-            <a href="#" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Мы на карте</a>
+            <NuxtLink to="#" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Мы на карте</NuxtLink>
           </div>
         </li>
         <li>
@@ -879,7 +905,7 @@
             <svg class="flex-shrink-0 h-5 w-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
               <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
             </svg>
-            <a href="#" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Скидки</a>
+            <NuxtLink to="#" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Скидки</NuxtLink>
           </div>
         </li>
         <li>
@@ -887,7 +913,7 @@
             <svg class="flex-shrink-0 h-5 w-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
               <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
             </svg>
-            <a href="#" aria-current="page" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Отзывы</a>
+            <NuxtLink to="#" aria-current="page" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Отзывы</NuxtLink>
           </div>
         </li>
         <li>
@@ -895,7 +921,7 @@
             <svg class="flex-shrink-0 h-5 w-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
               <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
             </svg>
-            <a href="#" aria-current="page" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Партнёрам</a>
+            <NuxtLink to="#" aria-current="page" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Партнёрам</NuxtLink>
           </div>
         </li>
         <li>
@@ -903,7 +929,7 @@
             <svg class="flex-shrink-0 h-5 w-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
               <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
             </svg>
-            <a href="#" aria-current="page" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Клиентам</a>
+            <NuxtLink to="#" aria-current="page" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Клиентам</NuxtLink>
           </div>
         </li>
         <li>
@@ -911,7 +937,7 @@
             <svg class="flex-shrink-0 h-5 w-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
               <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
             </svg>
-            <a href="#" aria-current="page" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Акции</a>
+            <NuxtLink to="#" aria-current="page" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Акции</NuxtLink>
           </div>
         </li>
       </ol>

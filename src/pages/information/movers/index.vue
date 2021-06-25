@@ -1,5 +1,5 @@
 <template>
-
+<p>грузчики</p>
 </template>
 
 <script>

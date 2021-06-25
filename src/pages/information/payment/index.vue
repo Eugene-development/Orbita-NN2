@@ -1,5 +1,5 @@
 <template>
-
+<p>оплата</p>
 </template>
 
 <script>
