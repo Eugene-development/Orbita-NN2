@@ -10,11 +10,11 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'База строительных материалов  || Стройматериалы в Нижнем Новгороде',
+    title: 'База строительных и отделочных материалов "Орбита-строй" || Стройматериалы в Нижнем Новгороде',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'База строительных и отделочных материалов в Нижнем Новгороде. В ассортименте стройматериалы, отделка, инструмент, электротовары, изоляция, сантехника' }
+      { hid: 'description', name: 'description', content: 'База строительных и отделочных материалов в Нижнем Новгороде "Орбита-строй". В ассортименте стройматериалы, отделка, инструмент, электротовары, изоляция, сантехника' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: 'https://lumen-image-bucket.s3.eu-central-1.amazonaws.com/logo/favicon.ico' }
