@@ -1,21 +1,21 @@
 <template>
 <div>
-  <div class="w-screen  py-20 bg-gray-100">
+  <div class="w-screen  py-20 bg-yellow-100">
     <div class="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
       <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-        <img class="h-22" src="https://орбита-строй.рф/storage/img/brand/1.png" alt="Tuple">
+        <img class="h-22" src="https://lumen-image-bucket.s3.eu-central-1.amazonaws.com/brands/1.png" alt="Tuple">
       </div>
       <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-        <img class="h-22" src="https://орбита-строй.рф/storage/img/brand/2.png" alt="Mirage">
+        <img class="h-22" src="https://lumen-image-bucket.s3.eu-central-1.amazonaws.com/brands/2.png" alt="Mirage">
       </div>
       <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-        <img class="h-22" src="https://орбита-строй.рф/storage/img/brand/3.png" alt="StaticKit">
+        <img class="h-22" src="https://lumen-image-bucket.s3.eu-central-1.amazonaws.com/brands/3.png" alt="StaticKit">
       </div>
       <div class="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
-        <img class="h-22" src="https://орбита-строй.рф/storage/img/brand/4.png" alt="Transistor">
+        <img class="h-22" src="https://lumen-image-bucket.s3.eu-central-1.amazonaws.com/brands/4.png" alt="Transistor">
       </div>
       <div class="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
-        <img class="h-22" src="https://орбита-строй.рф/storage/img/brand/5.png" alt="Workcation">
+        <img class="h-22" src="https://lumen-image-bucket.s3.eu-central-1.amazonaws.com/brands/5.png" alt="Workcation">
       </div>
     </div>
   </div>
@@ -76,9 +76,8 @@
               <ul class="mt-4 space-y-4">
                 <li class="flow-root">
                   <NuxtLink
-
                     class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900"
-                    to="/information/client/workteams">
+                    to="/information/payment">
                     <!-- Heroicon name: information-circle -->
                     <svg aria-hidden="true" class="flex-shrink-0 h-6 w-6 text-gray-600" fill="none"
                          stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -91,9 +90,8 @@
 
                 <li class="flow-root">
                   <NuxtLink
-
                     class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900"
-                    to="/information/client/delivery">
+                    to="/information/delivery">
                     <!-- Heroicon name: office-building -->
                     <svg aria-hidden="true" class="flex-shrink-0 h-6 w-6 text-gray-600" fill="none"
                          stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -106,9 +104,8 @@
 
                 <li class="flow-root">
                   <NuxtLink
-
                     class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900"
-                    to="/information/client/payment">
+                    to="/information/movers">
                     <!-- Heroicon name: newspaper -->
                     <svg aria-hidden="true" class="flex-shrink-0 h-6 w-6 text-gray-600" fill="none"
                          stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -121,9 +118,8 @@
 
                 <li class="flow-root">
                   <NuxtLink
-
                     class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900"
-                    to="/information/client/testimonials">
+                    to="/information/contact">
                     <!-- Heroicon name: briefcase -->
                     <svg aria-hidden="true" class="flex-shrink-0 h-6 w-6 text-gray-600" fill="none"
                          stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -144,9 +140,8 @@
               <ul class="mt-4 space-y-4">
                 <li class="flow-root">
                   <NuxtLink
-
                     class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900"
-                    to="/information/partner/yurlica">
+                    to="/information/discount">
                     <!-- Heroicon name: user-group -->
                     <svg aria-hidden="true" class="flex-shrink-0 h-6 w-6 text-gray-600" fill="none"
                          stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -159,9 +154,8 @@
 
                 <li class="flow-root">
                   <NuxtLink
-
                     class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900"
-                    to="/information/partner/brigades">
+                    to="/information/testimonials">
                     <!-- Heroicon name: globe-alt -->
                     <svg aria-hidden="true" class="flex-shrink-0 h-6 w-6 text-gray-600" fill="none"
                          stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -174,9 +168,8 @@
 
                 <li class="flow-root">
                   <NuxtLink
-
                     class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900"
-                    to="/information/partner/ip">
+                    to="/information/action">
                     <!-- Heroicon name: bookmark-alt -->
                     <svg aria-hidden="true" class="flex-shrink-0 h-6 w-6 text-gray-600" fill="none"
                          stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -191,7 +184,7 @@
                   <NuxtLink
 
                     class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900"
-                    to="/information/partner/fizlica">
+                    to="/information/partner">
                     <!-- Heroicon name: desktop-computer -->
                     <svg aria-hidden="true" class="flex-shrink-0 h-6 w-6 text-gray-600" fill="none"
                          stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

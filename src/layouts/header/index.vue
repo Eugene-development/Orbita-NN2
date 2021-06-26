@@ -1,7 +1,6 @@
 <template>
   <div>
-
-    <nav class="flex py-2" >
+    <nav class="flex py-2">
       <ol class="flex items-center space-x-8 mx-auto">
         <li>
           <div class="flex items-center">
@@ -94,7 +93,7 @@
 <!--    </div>-->
 
 
-    <div class="relative bg-yellow-300 shadow-lg">
+    <div class="relative bg-gradient-to-r from-yellow-200 via-yellow-300 to-yellow-100 shadow-lg">
       <div class="flex justify-between items-left mx-8 px-8 py-3 sm:px-6 md:justify-start md:space-x-10">
         <div class="flex justify-start lg:w-0 lg:flex-1">
             <NuxtLink to="/">
@@ -125,19 +124,19 @@
             Главная
           </NuxtLink>
           <NuxtLink class="pt-2 text-base font-medium text-gray-600 hover:text-gray-900"
-                    to="#">
+                    to="/information/payment">
             Оплата
           </NuxtLink>
           <NuxtLink class="pt-2 text-base font-medium text-gray-600 hover:text-gray-900"
-                    to="#">
+                    to="/information/delivery">
             Доставка
           </NuxtLink>
           <NuxtLink class="pt-2 text-base font-medium text-gray-600 hover:text-gray-900"
-                    to="#">
+                    to="/information/movers">
             Грузчики
           </NuxtLink>
           <NuxtLink class="pt-2 text-base font-medium text-gray-600 hover:text-gray-900"
-                    to="#">
+                    to="/information/contact">
             Контакты
           </NuxtLink>
 
@@ -438,12 +437,12 @@
           </div>
         </nav>
         <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-          <a class="whitespace-nowrap text-base font-medium text-gray-600 hover:text-gray-900" href="#">
+          <a class="whitespace-nowrap text-base font-medium text-gray-600 hover:text-gray-900" href="https://orbita.adminexpo.com/admin/registration">
             Регистрация
           </a>
           <a
             class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-3 py-1 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-red-800 hover:bg-red-600"
-            href="#">
+            href="https://orbita.adminexpo.com/admin/login">
             Вход
           </a>
         </div>
@@ -897,7 +896,7 @@
       <ol class="flex items-center space-x-4 mx-auto">
         <li>
           <div class="flex items-center">
-            <NuxtLink to="#" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Мы на карте</NuxtLink>
+            <NuxtLink to="/information/map" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Мы на карте</NuxtLink>
           </div>
         </li>
         <li>
@@ -905,7 +904,7 @@
             <svg class="flex-shrink-0 h-5 w-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
               <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
             </svg>
-            <NuxtLink to="#" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Скидки</NuxtLink>
+            <NuxtLink to="/information/discount" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Скидки</NuxtLink>
           </div>
         </li>
         <li>
@@ -913,7 +912,7 @@
             <svg class="flex-shrink-0 h-5 w-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
               <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
             </svg>
-            <NuxtLink to="#" aria-current="page" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Отзывы</NuxtLink>
+            <NuxtLink to="/information/testimonials" aria-current="page" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Отзывы</NuxtLink>
           </div>
         </li>
         <li>
@@ -921,7 +920,7 @@
             <svg class="flex-shrink-0 h-5 w-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
               <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
             </svg>
-            <NuxtLink to="#" aria-current="page" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Партнёрам</NuxtLink>
+            <NuxtLink to="/information/partner" aria-current="page" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Партнёрам</NuxtLink>
           </div>
         </li>
         <li>
@@ -929,7 +928,7 @@
             <svg class="flex-shrink-0 h-5 w-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
               <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
             </svg>
-            <NuxtLink to="#" aria-current="page" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Клиентам</NuxtLink>
+            <NuxtLink to="/information/client" aria-current="page" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Клиентам</NuxtLink>
           </div>
         </li>
         <li>
@@ -937,7 +936,7 @@
             <svg class="flex-shrink-0 h-5 w-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
               <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
             </svg>
-            <NuxtLink to="#" aria-current="page" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Акции</NuxtLink>
+            <NuxtLink to="/information/action" aria-current="page" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Акции</NuxtLink>
           </div>
         </li>
       </ol>
