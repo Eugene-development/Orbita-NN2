@@ -649,9 +649,9 @@
           <h2 class="text-3xl font-extrabold text-gray-800 sm:text-4xl">
             Интернет-магазин строительных и отделочных материалов "Орбита-строй"
           </h2>
-          <!--          <p class="mt-3 text-xl text-gray-500 sm:mt-4">-->
-          <!--            Строительные и отделочные материалы оптом и в розницу-->
-          <!--          </p>-->
+          <p class="mt-3 text-xl text-gray-500 sm:mt-4">
+            При заказе через сайт для вас скидка 5%
+          </p>
         </div>
       </div>
       <div class="mt-10 pb-4 bg-white sm:pb-8">
@@ -660,16 +660,16 @@
           <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="w-full mx-auto">
               <dl class="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-6">
-                <div
-                  v-for="(head, idx) of allHead" :key="allHead.id"
-                  class="flex flex-col border-b border-gray-100 p-6 text-center sm:border-0 sm:border-r">
-                  <dt class="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
+                <NuxtLink v-for="(head, idx) of allHead" :key="allHead.id"
+                          :to="'/rubric/' + head.slug"
+                          class="flex flex-col border-b border-gray-100 p-6 text-center sm:border-0 sm:border-r">
+                  <dt class="order-2 mt-2 text-lg leading-6 font-medium text-gray-600">
                     {{ head.name }}
                   </dt>
-                  <dd class="order-1 text-5xl font-extrabold text-indigo-600">
-                    86
-                  </dd>
-                </div>
+                  <!--                  <dd class="order-1 text-5xl font-extrabold text-indigo-600">-->
+                  <!--                    86-->
+                  <!--                  </dd>-->
+                </NuxtLink>
               </dl>
             </div>
           </div>
@@ -857,19 +857,19 @@
 
     <nav class="flex border-b-2 border-t-2 py-2 " aria-label="Breadcrumb">
       <ol class="flex items-center space-x-4 mx-auto">
+        <!--        <li>-->
+        <!--          <div class="flex items-center">-->
+        <!--            <NuxtLink to="/information/map" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">-->
+        <!--              Мы на карте-->
+        <!--            </NuxtLink>-->
+        <!--          </div>-->
+        <!--        </li>-->
         <li>
           <div class="flex items-center">
-            <NuxtLink to="/information/map" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Мы на
-              карте
-            </NuxtLink>
-          </div>
-        </li>
-        <li>
-          <div class="flex items-center">
-            <svg class="flex-shrink-0 h-5 w-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                 viewBox="0 0 20 20" aria-hidden="true">
-              <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"/>
-            </svg>
+            <!--            <svg class="flex-shrink-0 h-5 w-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor"-->
+            <!--                 viewBox="0 0 20 20" aria-hidden="true">-->
+            <!--              <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"/>-->
+            <!--            </svg>-->
             <NuxtLink to="/information/discount" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">
               Скидки
             </NuxtLink>

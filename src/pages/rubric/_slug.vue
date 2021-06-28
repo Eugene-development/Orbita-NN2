@@ -19,7 +19,11 @@
             <h2 class="mt-8">
               <span class="text-2xl font-extrabold text-gray-900">Пиломатериал</span>
             </h2>
-            <NuxtLink to="/" class="mt-8 block w-full bg-indigo-800 border border-indigo-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-indigo-900">Просмотреть</NuxtLink>
+            <NuxtLink
+              to="/"
+              class="mt-8 block w-full bg-indigo-800 border border-indigo-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-indigo-900">
+              Просмотреть
+            </NuxtLink>
           </div>
 <!--          <div class="pt-6 pb-8 px-6">-->
 <!--            <h3 class="text-xs font-medium text-gray-900 tracking-wide uppercase">What's included</h3>-->
@@ -54,7 +58,3 @@ export default {
   name: "index"
 }
 </script>
-
-<style scoped>
-
-</style>
