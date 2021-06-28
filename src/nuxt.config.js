@@ -50,6 +50,19 @@ export default {
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
+
+    ['@nuxtjs/google-analytics', {
+      id: ''
+    }],
+    ['@nuxtjs/yandex-metrika', {
+      id: '82186939',
+      webvisor: true,
+      clickmap:true,
+      useCDN:false,
+      trackLinks:true,
+      accurateTrackBounce:true,
+    }],
+
   ],
   /*
   ** Axios module configuration

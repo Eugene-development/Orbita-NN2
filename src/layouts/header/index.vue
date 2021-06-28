@@ -463,7 +463,7 @@
           From: "opacity-100 scale-100"
           To: "opacity-0 scale-95"
       -->
-      <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+      <div v-if="false" class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
         <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
           <div class="pt-5 pb-6 px-5">
             <div class="flex items-center justify-between">
@@ -968,7 +968,7 @@
 
 <script>
 import MobileMenu from './mobileMenu'
-import {mapActions} from "vuex";
+import {mapActions, mapGetters} from "vuex";
 
 export default {
   components: {
@@ -978,5 +978,12 @@ export default {
   methods: {
     ...mapActions({})
   },
+
+  computed: {
+    ...mapGetters({
+      allHead: 'navbar/head/allHead',
+    }),
+  },
+
 }
 </script>
