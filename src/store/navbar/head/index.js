@@ -1,20 +1,20 @@
 export const state = () => ({
-  allHead: [],
+  allHeads: [],
   apiCRUD: { baseURL: process.env.API_CRUD }
 });
 
 export const actions = {
-  async getHead ({ commit, state}) {
+  async getHeads ({ commit, state}) {
 
     const { data } = await this.$axios.$get('get-all-head-rubric', state.apiCRUD);
-    commit('ALL_HEAD', data);
+    commit('ALL_HEADS', data);
   },
 };
 
 export const mutations = {
-  ALL_HEAD: (state, data) => state.allHead = data,
+  ALL_HEADS: (state, data) => state.allHeads = data,
 };
 
 export const getters = {
-  allHead: state => state.allHead,
+  allHeads: state => state.allHeads,
 };

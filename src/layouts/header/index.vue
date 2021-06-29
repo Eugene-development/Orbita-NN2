@@ -660,7 +660,7 @@
           <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="w-full mx-auto">
               <dl class="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-6">
-                <NuxtLink v-for="(head, idx) of allHead" :key="allHead.id"
+                <NuxtLink v-for="(head, idx) of allHeads" :key="allHeads.id"
                           :to="'/rubric/' + head.slug"
                           class="flex flex-col border-b border-gray-100 p-6 text-center sm:border-0 sm:border-r">
                   <dt class="order-2 mt-2 text-lg leading-6 font-medium text-gray-600">
@@ -939,7 +939,7 @@ export default {
 
   computed: {
     ...mapGetters({
-      allHead: 'navbar/head/allHead',
+      allHeads: 'navbar/head/allHeads',
     }),
   },
 
