@@ -41,7 +41,7 @@
               </svg>
             </div>
             <h3 class="text-lg font-medium text-white">Контактная информация</h3>
-            <p class="mt-6 text-base text-indigo-50 max-w-3xl">Дзержинск, пр. Ленина, 121-В <br> Съезд с объездной дороги г. Дзержинска. Рядом с шинным центром Велс.</p>
+            <p class="mt-6 text-base text-indigo-50 max-w-3xl">Нижний Новгород, Автозаводский район, <br> ул. Зеленхозовская 4-а.</p>
             <dl class="mt-8 space-y-6">
               <dt><span class="sr-only">Телефон</span></dt>
               <dd class="flex text-base text-indigo-50">
