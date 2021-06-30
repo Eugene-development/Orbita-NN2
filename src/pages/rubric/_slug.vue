@@ -27,7 +27,7 @@
               <span class="text-2xl font-extrabold text-gray-900">{{ rubric.name }}</span>
             </h2>
             <NuxtLink
-              to="/"
+              :to="'/category/' + rubric.id"
               class="mt-8 block w-full bg-indigo-500 border border-indigo-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-indigo-900">
               Просмотреть
             </NuxtLink>
@@ -66,7 +66,7 @@ import { mapActions , mapGetters} from "vuex";
 export default {
   name: "index",
   async asyncData({store, params}) {
-    await store.dispatch('navbar/rubric/getHead', {
+    await store.dispatch('catalog/rubric/getHead', {
       slug: params.slug
     })
   },
@@ -74,7 +74,7 @@ export default {
 
   computed: {
     ...mapGetters({
-      head: 'navbar/rubric/head',
+      head: 'catalog/rubric/head',
     }),
   },
 

@@ -945,7 +945,7 @@ export default {
 
   computed: {
     ...mapGetters({
-      allHeads: 'navbar/head/allHeads',
+      allHeads: 'catalog/head/allHeads',
     }),
   },
 
