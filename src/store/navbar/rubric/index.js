@@ -11,6 +11,7 @@ export const actions = {
 
     const {data} = await this.$axios.$get('get-all-head-rubric', state.apiCRUD);
 
+    console.log(data)
     const head = find(data, {'slug': payload.slug});
     commit('HEAD', head);
 

@@ -7,7 +7,7 @@
 
 
 
-    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <div class="w-full mx-auto py-12 px-4 sm:px-6 lg:px-8">
       <div class="sm:flex sm:flex-col sm:align-center">
         <h1 class="text-5xl font-extrabold text-gray-900 sm:text-center">{{ head.name }}</h1>
         <p class="mt-5 text-xl text-gray-500 sm:text-center">Выберите интерсующую вас рубрику из раздела "{{ head.name }}"</p>
@@ -18,17 +18,17 @@
       </div>
       <div class="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-4">
 
-        <div v-for="(rubric, idx) of head" :key="head.id"
+        <div v-for="(rubric, idx) of head.rubric" :key="head.id"
              class="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
           <div class="p-6">
             <p class="text-lg leading-6 font-medium text-gray-900">{{ head.name }}</p>
-            <p class="mt-4 text-sm text-gray-500">Недорогой и качественный пиломатериал</p>
+<!--            <p class="mt-4 text-sm text-gray-500">Недорогой и качественный пиломатериал</p>-->
             <h2 class="mt-8">
-              <span class="text-2xl font-extrabold text-gray-900">Пиломатериал</span>
+              <span class="text-2xl font-extrabold text-gray-900">{{ rubric.name }}</span>
             </h2>
             <NuxtLink
               to="/"
-              class="mt-8 block w-full bg-indigo-800 border border-indigo-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-indigo-900">
+              class="mt-8 block w-full bg-indigo-500 border border-indigo-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-indigo-900">
               Просмотреть
             </NuxtLink>
           </div>

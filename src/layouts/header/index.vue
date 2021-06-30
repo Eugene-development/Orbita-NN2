@@ -1,7 +1,7 @@
 <template>
   <div>
-    <nav class="flex py-2">
-      <ol class="flex items-center space-x-8 mx-auto">
+    <nav class=" flex py-2">
+      <ol class="flex items-center space-x-10 mx-auto">
         <li>
           <div class="flex items-center">
             <svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor"
@@ -11,7 +11,7 @@
                 stroke-linecap="round" stroke-linejoin="round"
                 stroke-width="2"/>
             </svg>
-            <p class="ml-2 text-lg text-red-900 animate-pulse">
+            <p class="ml-2 text-base text-red-900 animate-pulse">
               8 (930) 288-88-62
             </p>
           </div>
@@ -24,7 +24,7 @@
                     stroke-linejoin="round"
                     stroke-width="2"/>
             </svg>
-            <p class="ml-2 text-lg">
+            <p class="ml-2 text-base">
               Пн-Пт 8:00-17:30; Сб 9:00-16:00
             </p>
           </div>
@@ -38,7 +38,7 @@
                 stroke-linecap="round" stroke-linejoin="round"
                 stroke-width="2"/>
             </svg>
-            <p class="ml-2 text-lg">
+            <p class="ml-2 text-base">
               orbita88yuliya@mail.ru
             </p>
           </div>
@@ -50,7 +50,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
             </svg>
-            <p class="ml-2 text-lg">
+            <p class="ml-2 text-base">
               Избранное (6)
             </p>
           </div>
@@ -64,7 +64,7 @@
                 stroke-linecap="round" stroke-linejoin="round"
                 stroke-width="2"></path>
             </svg>
-            <p class="ml-2 text-lg">
+            <p class="ml-2 text-base">
               Корзина (4)
             </p>
           </div>
@@ -139,11 +139,6 @@
                     to="/information/contact">
             Контакты
           </NuxtLink>
-          <a class="pt-2 text-base font-medium text-gray-600 hover:text-gray-900"
-             href="https://vk.com/orbita_stroy"
-             target="_blank">
-            ВКонтакте
-          </a>
 
           <!--          <div class="pt-2 relative">-->
           <!--            &lt;!&ndash; Item active: "text-gray-900", Item inactive: "text-gray-600" &ndash;&gt;-->
@@ -917,6 +912,17 @@
             <NuxtLink to="/information/action" aria-current="page"
                       class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Акции
             </NuxtLink>
+          </div>
+        </li>
+        <li>
+          <div class="flex items-center">
+            <svg class="flex-shrink-0 h-5 w-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                 viewBox="0 0 20 20" aria-hidden="true">
+              <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"/>
+            </svg>
+            <a href="https://vk.com/orbita_stroy" aria-current="page" target="_blank"
+                      class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700"> VK
+            </a>
           </div>
         </li>
       </ol>

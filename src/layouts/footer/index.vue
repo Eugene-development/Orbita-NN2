@@ -33,7 +33,7 @@
               <ul class="mt-4 space-y-4">
                 <li>
                   <p class="text-base text-gray-600 hover:text-white">
-                    г. Нижний Новгород
+                    г. Нижний Новгород, <br> ул. Зеленхозовская 4-а
                   </p>
                 </li>
                 <li >
