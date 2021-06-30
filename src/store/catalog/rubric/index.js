@@ -9,9 +9,7 @@ export const state = () => ({
 export const actions = {
   async getHead({commit, state}, payload) {
 
-    const {data} = await this.$axios.$get('get-all-head-rubric', state.apiCRUD);
-
-    console.log(data)
+    const { data } = await this.$axios.$get('get-all-head-rubric', state.apiCRUD);
     const head = find(data, {'slug': payload.slug});
     commit('HEAD', head);
 

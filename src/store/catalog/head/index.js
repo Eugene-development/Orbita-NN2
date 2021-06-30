@@ -5,7 +5,6 @@ export const state = () => ({
 
 export const actions = {
   async getHeads ({ commit, state}) {
-
     const { data } = await this.$axios.$get('get-all-head-rubric', state.apiCRUD);
     commit('ALL_HEADS', data);
   },
