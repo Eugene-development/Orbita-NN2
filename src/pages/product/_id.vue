@@ -45,7 +45,7 @@
 
 
               <NuxtLink v-for="(category, idx) of category" :key="category.id"
-                :to="'/shop/category/products/' + category.slug">
+                :to="'/products/' + category.slug">
               <div
                    class="flex border-t border-gray-200 py-2">
                 <span class="text-gray-500">Категория</span>
