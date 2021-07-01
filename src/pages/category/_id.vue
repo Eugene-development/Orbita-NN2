@@ -3,7 +3,7 @@
   <div class="">
 
     <div v-for="(rubric, idx) of allRubric" :key="allRubric.id">
-      <div class="p-10 mx-auto sm:px-6 lg:px-8 bg-gradient-to-b from-blueGray-300 to-gray-50 shadow-lg mb-4">
+      <div class="p-10 mx-auto sm:px-6 lg:px-8 bg-gradient-to-b from-white to-yellow-50 shadow-lg mb-4">
         <div class="flex flex-col text-center w-full">
           <h1 class=" text-5xl font-medium title-font text-gray-900">{{ rubric.name }}</h1>
         </div>
@@ -82,7 +82,7 @@
                          class="mt-3 text-base text-gray-500">
                         {{ text.H2 }}
                       </p>
-                      <p class="mt-2 text-base font-medium text-red-800 place-items-end">
+                      <p class="mt-2 text-base font-medium text-indigo-800 place-items-end">
                         Подробнее &rarr;
                         <!--                    <NuxtLink-->
                         <!--                      :to="'products/' + category.slug"-->
