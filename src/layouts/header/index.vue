@@ -644,7 +644,7 @@
           <h2 class="text-3xl font-extrabold text-gray-800 sm:text-4xl">
             Интернет-магазин строительных и отделочных материалов "Орбита-строй"
           </h2>
-          <p class="mt-3 text-xl text-gray-500 sm:mt-4">
+          <p class="mt-3 text-xl text-indigo-500 sm:mt-4">
             При заказе через сайт для вас скидка 5%
           </p>
         </div>
@@ -657,8 +657,8 @@
               <dl class="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-6">
                 <NuxtLink v-for="(head, idx) of allHeads" :key="allHeads.id"
                           :to="'/rubric/' + head.slug"
-                          class="flex flex-col border-b border-gray-100 p-6 text-center sm:border-0 sm:border-r">
-                  <dt class="order-2 mt-2 text-lg leading-6 font-medium text-gray-600">
+                          class="flex flex-col border-b border-gray-200 p-6 text-center sm:border-0 sm:border-r">
+                  <dt class="order-2 mt-2 text-lg leading-6 font-medium text-gray-800">
                     {{ head.name }}
                   </dt>
                   <!--                  <dd class="order-1 text-5xl font-extrabold text-indigo-600">-->
