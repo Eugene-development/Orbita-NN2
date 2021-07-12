@@ -649,7 +649,7 @@
           </p>
         </div>
       </div>
-      <div class="mt-10 pb-4 bg-white sm:pb-8">
+      <div class="mt-8 pb-4 bg-white sm:pb-8">
         <div class="relative">
           <div class="absolute inset-0 h-1/2 bg-yellow-50"></div>
           <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
