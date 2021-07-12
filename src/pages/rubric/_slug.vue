@@ -27,7 +27,7 @@
               <span class="text-2xl font-extrabold text-gray-900">{{ rubric.name }}</span>
             </h2>
             <NuxtLink
-              :to="'/category/' + rubric.id"
+              :to="'/category/' + rubric.slug"
               class="mt-8 block w-full bg-indigo-500 border border-indigo-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-indigo-900">
               Просмотреть
             </NuxtLink>

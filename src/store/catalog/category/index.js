@@ -2,10 +2,10 @@ import {forEach} from 'lodash';
 import {find} from 'lodash';
 
 export const state = () => ({
-  allRubric: [],
+  allCategories: [],
   products: [],
   pathAWS: '',
-  seo: [],
+  rubricId: null,
 
   pathAWSBucket: {
     path: process.env.IMAGE_PRODUCTS
@@ -17,35 +17,32 @@ export const state = () => ({
 });
 
 export const actions = {
-  async getSeo({commit, state}, payload) {
-    // console.log(payload.slug);
 
-    // await this.$axios.setToken('1', 'Bearer')
+  async getCategories({commit, state}, payload) {
 
-    const {data} = await this.$axios.$get('get-all-category-seo', state.apiCRUD);
-    const currentCategory = find(data, {'slug': payload.slug});
-
-    //Забрать все категории-По слагу выбрать айди нужной категории-снова отправить запрос на сео
-    // const {data} = await this.$axios.$get('get-category-seo/' + 31, state.apiCRUD);
-
-
-    // console.log(data[0].seo.title);
-
-      commit('SEO', currentCategory.seo);
-
-  },
-
-  async getRubric({commit, state}, payload) {
+    //TODO токены
 
     // await this.$axios.setToken('1', 'Bearer')
     // this.$axios.setHeader('Authorization', '1');
     // this.$axios.setToken('1');
 
-    const {data} = await this.$axios.$get('get-where-rubric-category-count-text/' + payload.id, state.apiCRUD);
-    const rubricID = payload.id;
+
+
+
+    //TODO а как на счёт искать по слагу на бэке?
+    //Получил Id категории по слагу в пейлоаде
+    const rubrics = await this.$axios.$get('get-all-rubric', state.apiCRUD);
+
+    forEach(rubrics, function (value) {
+      const {id} = find(value, {'slug': payload.slug});
+      commit('RUBRIC_ID', id);
+    });
+
+    const {data} = await this.$axios.$get('get-where-rubric-category-count-text/' + state.rubricID, state.apiCRUD);
+    // const rubricID = payload.id;
 //TODO Слабое место. Баг при перезагрузке
-    commit('ALL_RUBRIC', data);
-    commit('RUBRIC_ID', rubricID);
+    commit('ALL_CATEGORIES', data);
+    // commit('RUBRIC_ID', rubricID);
   },
 
   async getProducts({commit, state}, payload) {
@@ -71,16 +68,15 @@ export const actions = {
 
 
 export const mutations = {
-  ALL_RUBRIC: (state, data) => state.allRubric = data,
+  ALL_CATEGORIES: (state, data) => state.allCategories = data,
   PRODUCTS: (state, data) => state.products = data,
-  RUBRIC_ID: (state, rubricID) => state.rubricID = rubricID,
+  RUBRIC_ID: (state, id) => state.rubricID = id,
   PATH_AWS: (state, pathAWS) => state.pathAWS = pathAWS,
-  SEO: (state, seo) => state.seo = seo
+
 };
 
 export const getters = {
-  allRubric: state => state.allRubric,
+  allCategories: state => state.allCategories,
   products: state => state.products,
   pathAWS: state => state.pathAWS,
-  seo: state => state.seo,
 };

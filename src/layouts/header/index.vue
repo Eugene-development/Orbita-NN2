@@ -644,7 +644,7 @@
           <h2 class="text-3xl font-extrabold text-gray-800 sm:text-4xl">
             Интернет-магазин строительных и отделочных материалов "Орбита-строй"
           </h2>
-          <p class="mt-3 text-xl text-indigo-500 sm:mt-4">
+          <p class="mt-3 text-xl text-red-800 sm:mt-4">
             При заказе через сайт для вас скидка 5%
           </p>
         </div>
