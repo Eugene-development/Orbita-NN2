@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-blueGray-200">
+  <div class="bg-blueGray-50">
     <div class="p-10 mx-auto sm:px-6 lg:px-8 bg-gradient-to-b from-white to-yellow-50 shadow-lg mb-4">
       <div class="flex flex-col text-center w-full">
         <h1 class=" text-5xl font-medium title-font text-gray-900">{{ products.name }}</h1>
