@@ -14,7 +14,7 @@ export const state = () => ({
   cart: [],
   pathAWS: '',
   cartProducts: [],
-  lengthCart: 0,
+  lengthCart: 1,
   totalSum: '',
   productsInCart:[],
   visibleSendOrder: true,
