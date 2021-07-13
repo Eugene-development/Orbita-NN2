@@ -66,7 +66,7 @@
               <div class="flex">
                 <span class="title-font font-medium text-4xl text-gray-900">{{ item.price }} руб/{{ item.unit }}.</span>
                 <button
-                  v-if="false"
+                  v-if="!productsInCart.some(arrVal => item.id === arrVal)"
                   @click.prevent.once="sendToCart (item.id)"
                   class="flex ml-auto text-white bg-red-900 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-900 rounded"
                   wfd-id="157">В корзину

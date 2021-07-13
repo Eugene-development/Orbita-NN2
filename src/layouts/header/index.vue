@@ -64,9 +64,12 @@
                 stroke-linecap="round" stroke-linejoin="round"
                 stroke-width="2"></path>
             </svg>
-            <p class="ml-2 text-base">
-              Корзина (4)
-            </p>
+            <NuxtLink
+              @click.native="cart()"
+              to="/shop/cart"
+              class="ml-2 text-base">
+              Корзина ({{lengthCart}})
+            </NuxtLink>
           </div>
         </li>
       </ol>
@@ -940,12 +943,15 @@ export default {
   },
 
   methods: {
-    ...mapActions({})
+    ...mapActions({
+      'cart': 'catalog/cart/getCart',
+    })
   },
 
   computed: {
     ...mapGetters({
       allHeads: 'catalog/head/allHeads',
+      lengthCart: 'catalog/cart/lengthCart',
     }),
   },
 
