@@ -6,6 +6,8 @@ export const state = () => ({
   products: [],
   pathAWS: '',
   rubricId: null,
+  categoryId: null,
+
 
   pathAWSBucket: {
     path: process.env.IMAGE_PRODUCTS
@@ -46,23 +48,33 @@ export const actions = {
   },
 
   async getProducts({commit, state}, payload) {
+
+
     const pathAWS = state.pathAWSBucket.path
     commit('PATH_AWS', pathAWS)
 
 
 
 
+    //TODO а как на счёт искать по слагу на бэке?
+    //Получил Id категории по слагу в пейлоаде
+    const categories = await this.$axios.$get('get-all-category', state.apiCRUD);
 
-    // await this.$axios.setToken('1', 'Bearer')
-
-
-
-    const {data} = await this.$axios.$get('get-where-rubric-category-count-text/' + state.rubricID, state.apiCRUD);
-    const slugCategory = payload.slug;
-    forEach(data, function (value) {
-      const products = find(value.category, {'slug': slugCategory});
-      commit('PRODUCTS', products);
+    forEach(categories, function (value) {
+      const {id} = find(value, {'slug': payload.slug});
+      commit('CATEGORY_ID', id);
     });
+
+    const {data} = await this.$axios.$get('get-WhCategory-HmProduct-HmImageProduct-HmTextProduct-CoProduct/' + state.categoryId, state.apiCRUD);
+    commit('PRODUCTS', data[0]);
+
+
+    // const {data} = await this.$axios.$get('get-where-rubric-category-count-text/' + state.rubricID, state.apiCRUD);
+    // const slugCategory = payload.slug;
+    // forEach(data, function (value) {
+    //   const products = find(value.category, {'slug': slugCategory});
+    //   commit('PRODUCTS', products);
+    // });
   },
 };
 
@@ -71,6 +83,7 @@ export const mutations = {
   ALL_CATEGORIES: (state, data) => state.allCategories = data,
   PRODUCTS: (state, data) => state.products = data,
   RUBRIC_ID: (state, id) => state.rubricID = id,
+  CATEGORY_ID: (state, id) => state.categoryId = id,
   PATH_AWS: (state, pathAWS) => state.pathAWS = pathAWS,
 
 };
