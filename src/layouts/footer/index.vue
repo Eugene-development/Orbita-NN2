@@ -30,23 +30,18 @@
               <h3 class="text-lg font-semibold text-gray-600 tracking-wider uppercase">
                 Контакты:
               </h3>
-              <ul class="mt-4 space-y-4">
-                <li>
+              <div class="mt-4 space-y-4">
                   <p class="text-base text-gray-600 hover:text-white">
                     г. Нижний Новгород, <br> ул. Зеленхозовская 4-а
                   </p>
-                </li>
-                <li >
                   <p class="text-base text-gray-600 hover:text-white flex">
                     <svg class="my-auto mr-2 text-red-800 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                          xmlns="http://www.w3.org/2000/svg">
                       <path d="M21 3l-6 6m0 0V4m0 5h5M5 3a2 2 0 00-2 2v1c0 8.284 6.716 15 15 15h1a2 2 0 002-2v-3.28a1 1 0 00-.684-.948l-4.493-1.498a1 1 0 00-1.21.502l-1.13 2.257a11.042 11.042 0 01-5.516-5.517l2.257-1.128a1 1 0 00.502-1.21L9.228 3.683A1 1 0 008.279 3H5z" stroke-linecap="round" stroke-linejoin="round"
                             stroke-width="2"></path>
                     </svg>
-                    8 (930) 288-88-62
+                    8 (930) 688-88-62
                   </p>
-                </li>
-                <li>
                   <p class="text-base text-gray-600 hover:text-white flex">
 
                     <svg class="my-auto mr-2 text-red-800 w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -54,8 +49,6 @@
                     </svg>
                     orbita88yuliya@mail.ru
                   </p>
-                </li>
-                <li>
                     <a class="text-base text-gray-600 hover:text-white flex"href="https://vk.com/orbita_stroy"
                        target="_blank">
                       <svg class="my-auto mr-2 text-red-800 w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -63,8 +56,7 @@
                       </svg>
                       vk.com/orbita_stroy
                     </a>
-                </li>
-              </ul>
+              </div>
             </div>
           </div>
 
@@ -73,8 +65,8 @@
               <h3 class="text-lg font-semibold text-gray-600 tracking-wider uppercase">
                 Клиентам:
               </h3>
-              <ul class="mt-4 space-y-4">
-                <li class="flow-root">
+              <div class="mt-4 space-y-4">
+                <div class="flow-root">
                   <NuxtLink
                     class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900"
                     to="/information/payment">
@@ -86,9 +78,9 @@
                     </svg>
                     <span class="ml-4 text-gray-600">Оплата</span>
                   </NuxtLink>
-                </li>
+                </div>
 
-                <li class="flow-root">
+                <div class="flow-root">
                   <NuxtLink
                     class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900"
                     to="/information/delivery">
@@ -100,9 +92,9 @@
                     </svg>
                     <span class="ml-4 text-gray-600">Доставка</span>
                   </NuxtLink>
-                </li>
+                </div>
 
-                <li class="flow-root">
+                <div class="flow-root">
                   <NuxtLink
                     class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900"
                     to="/information/movers">
@@ -114,9 +106,9 @@
                     </svg>
                     <span class="ml-4 text-gray-600">Грузчики</span>
                   </NuxtLink>
-                </li>
+                </div>
 
-                <li class="flow-root">
+                <div class="flow-root">
                   <NuxtLink
                     class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900"
                     to="/information/contact">
@@ -128,17 +120,17 @@
                     </svg>
                     <span class="ml-4 text-gray-600">Контакты</span>
                   </NuxtLink>
-                </li>
+                </div>
 
-              </ul>
+              </div>
             </div>
             <div class="mt-12 md:mt-0">
               <h3 class="text-lg font-semibold text-gray-600 tracking-wider uppercase">
                 Информация:
               </h3>
 
-              <ul class="mt-4 space-y-4">
-                <li class="flow-root">
+              <div class="mt-4 space-y-4">
+                <div class="flow-root">
                   <NuxtLink
                     class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900"
                     to="/information/discount">
@@ -150,9 +142,9 @@
                     </svg>
                     <span class="ml-4 text-gray-600">Скидки</span>
                   </NuxtLink>
-                </li>
+                </div>
 
-                <li class="flow-root">
+                <div class="flow-root">
                   <NuxtLink
                     class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900"
                     to="/information/testimonials">
@@ -164,9 +156,9 @@
                     </svg>
                     <span class="ml-4 text-gray-600">Отзывы</span>
                   </NuxtLink>
-                </li>
+                </div>
 
-                <li class="flow-root">
+                <div class="flow-root">
                   <NuxtLink
                     class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900"
                     to="/information/action">
@@ -178,9 +170,9 @@
                     </svg>
                     <span class="ml-4 text-gray-600">Акции</span>
                   </NuxtLink>
-                </li>
+                </div>
 
-                <li class="flow-root">
+                <div class="flow-root">
                   <NuxtLink
 
                     class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900"
@@ -193,8 +185,8 @@
                     </svg>
                     <span class="ml-4 text-gray-600">Сотрудничество</span>
                   </NuxtLink>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -254,7 +246,7 @@
 <!--          </a>-->
         </div>
         <p class="mt-8 text-base text-gray-600 md:mt-0 md:order-1">
-          &copy; 2021 База строительных материалов "Орбита-строй".
+          &copy; 2021 База строительных и отделочных материалов "Орбита-Строй".
         </p>
       </div>
     </div>

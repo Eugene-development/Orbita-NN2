@@ -1,8 +1,7 @@
 <template>
   <div>
     <nav class=" flex py-2">
-      <ol class="flex items-center space-x-10 mx-auto">
-        <li>
+      <div class="flex items-center space-x-10 mx-auto">
           <div class="flex items-center">
             <svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor"
                  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -12,11 +11,9 @@
                 stroke-width="2"/>
             </svg>
             <p class="ml-2 text-base text-red-900 animate-pulse">
-              8 (930) 288-88-62
+              8 (930) 688-88-62
             </p>
           </div>
-        </li>
-        <li>
           <div class="flex items-center">
             <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                  xmlns="http://www.w3.org/2000/svg">
@@ -28,8 +25,7 @@
               Пн-Пт 8:00-17:30; Сб 9:00-16:00
             </p>
           </div>
-        </li>
-        <li>
+
           <div class="flex items-center">
             <svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor"
                  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -42,8 +38,8 @@
               orbita88yuliya@mail.ru
             </p>
           </div>
-        </li>
-        <li>
+
+
           <div class="flex items-center">
             <svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor"
                  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -54,8 +50,8 @@
               Избранное (6)
             </p>
           </div>
-        </li>
-        <li>
+
+
           <div class="flex items-center">
             <svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor"
                  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -71,8 +67,8 @@
               Корзина ({{lengthCart}})
             </NuxtLink>
           </div>
-        </li>
-      </ol>
+
+      </div>
       <!--      <div>-->
       <!--        <p>Корзина</p>-->
       <!--      </div>-->
@@ -660,7 +656,7 @@
               <dl class="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-6">
                 <NuxtLink v-for="(head, idx) of allHeads" :key="allHeads.id"
                           :to="'/rubric/' + head.slug"
-                          class="flex flex-col border-b border-gray-200 p-6 text-center sm:border-0 sm:border-r">
+                          class="flex flex-col border-b border-gray-200 p-4 text-center sm:border-0 sm:border-r sm:border-l">
                   <dt class="order-2 mt-2 text-lg leading-6 font-medium text-gray-800">
                     {{ head.name }}
                   </dt>
@@ -854,15 +850,15 @@
     <!-- This example requires Tailwind CSS v2.0+ -->
 
     <nav class="flex border-b-2 border-t-2 py-2 " aria-label="Breadcrumb">
-      <ol class="flex items-center space-x-4 mx-auto">
-        <!--        <li>-->
+      <div class="flex items-center space-x-4 mx-auto">
+        <!--        -->
         <!--          <div class="flex items-center">-->
         <!--            <NuxtLink to="/information/map" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">-->
         <!--              Мы на карте-->
         <!--            </NuxtLink>-->
         <!--          </div>-->
-        <!--        </li>-->
-        <li>
+        <!--        -->
+
           <div class="flex items-center">
             <!--            <svg class="flex-shrink-0 h-5 w-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor"-->
             <!--                 viewBox="0 0 20 20" aria-hidden="true">-->
@@ -872,8 +868,8 @@
               Скидки
             </NuxtLink>
           </div>
-        </li>
-        <li>
+
+
           <div class="flex items-center">
             <svg class="flex-shrink-0 h-5 w-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                  viewBox="0 0 20 20" aria-hidden="true">
@@ -883,8 +879,8 @@
                       class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Отзывы
             </NuxtLink>
           </div>
-        </li>
-        <li>
+
+
           <div class="flex items-center">
             <svg class="flex-shrink-0 h-5 w-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                  viewBox="0 0 20 20" aria-hidden="true">
@@ -894,8 +890,8 @@
                       class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Партнёрам
             </NuxtLink>
           </div>
-        </li>
-        <li>
+
+
           <div class="flex items-center">
             <svg class="flex-shrink-0 h-5 w-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                  viewBox="0 0 20 20" aria-hidden="true">
@@ -905,8 +901,8 @@
                       class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Клиентам
             </NuxtLink>
           </div>
-        </li>
-        <li>
+
+
           <div class="flex items-center">
             <svg class="flex-shrink-0 h-5 w-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                  viewBox="0 0 20 20" aria-hidden="true">
@@ -916,8 +912,8 @@
                       class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Акции
             </NuxtLink>
           </div>
-        </li>
-        <li>
+
+
           <div class="flex items-center">
             <svg class="flex-shrink-0 h-5 w-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                  viewBox="0 0 20 20" aria-hidden="true">
@@ -927,8 +923,7 @@
                       class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700"> VK
             </a>
           </div>
-        </li>
-      </ol>
+      </div>
     </nav>
   </div>
 </template>
