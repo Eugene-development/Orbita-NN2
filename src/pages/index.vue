@@ -70,7 +70,7 @@
           </div>
           <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
             <NuxtLink to="" class="block relative h-48 rounded overflow-hidden">
-              <img alt="ecommerce" class="object-cover object-center h-full block"
+              <img alt="ecommerce" class=" object-cover object-center h-full block"
                    src="https://lumen-image-bucket.s3.eu-central-1.amazonaws.com/images/EK-TG40.png">
             </NuxtLink>
             <NuxtLink to="">
