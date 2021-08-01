@@ -10,8 +10,8 @@
 <!--              <span class="sr-only">Workflow</span>-->
 <!--              <img class="h-10 w-auto" src="https://tailwindui.com/img/logos/workflow-mark.svg?color=white" alt="">-->
 <!--            </a>-->
-            <div class="flex ml-10 space-x-8 text-lg">
-              <div class="flex items-center">
+            <div class="flex lg:ml-8 space-x-8 text-lg">
+              <div class="flex items-center text-2xl lg:text-base">
                 <svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor"
                      viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path
