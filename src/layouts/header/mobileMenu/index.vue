@@ -48,32 +48,12 @@
               Главная
             </NuxtLink>
 
-            <div class="relative">
-              <!-- Item active: "text-gray-900", Item inactive: "text-gray-800" -->
-              <button
-                class="group px-1 rounded-md text-gray-800 inline-flex items-center text-base font-medium hover:text-red-800 focus:text-red-800 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-indigo-500 hover:underline"
-                type="button"
-                @click="change_visibleCatalog">
-                <span>Каталог</span>
-                <!--
-                  Heroicon name: chevron-down
-
-                  Item active: "text-gray-600", Item inactive: "text-gray-800"
-                -->
-                <svg aria-hidden="true" class="ml-2 h-5 w-5 text-gray-800 group-hover:text-gray-800"
-                     fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path clip-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        fill-rule="evenodd"/>
-                </svg>
-              </button>
-            </div>
             <NuxtLink
               class="text-base px-1 font-medium rounded-md text-gray-800 hover:text-red-800 focus:text-red-800 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-indigo-500 hover:underline"
-              to="/actions"
+              to="/information/payment"
               @click.native="close_visible"
             >
-              Акции
+              Оплата
             </NuxtLink>
             <!--              <NuxtLink-->
             <!--                class="text-base px-1 font-medium rounded-md text-gray-800 hover:text-red-800 focus:text-red-800 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-indigo-500 hover:underline"-->
@@ -84,45 +64,25 @@
             <!--              </NuxtLink>-->
             <NuxtLink
               class="text-base px-1 font-medium rounded-md text-gray-800 hover:text-red-800 focus:text-red-800 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-indigo-500 hover:underline"
-              to="/about"
+              to="/information/delivery"
               @click.native="close_visible"
             >
-              Компания
+              Доставка
             </NuxtLink>
-            <!--            <div class="relative">-->
-            <!--              &lt;!&ndash; Item active: "text-gray-900", Item inactive: "text-gray-800" &ndash;&gt;-->
-            <!--              <button-->
-            <!--                class="group px-1 rounded-md text-gray-800 inline-flex items-center text-base font-medium hover:text-red-800 focus:text-red-800 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-indigo-500 hover:underline"-->
-            <!--                type="button"-->
-            <!--                @click="change_visibleInformation">-->
-            <!--                <span>Информация</span>-->
-            <!--                &lt;!&ndash;-->
-            <!--                  Heroicon name: chevron-down-->
-
-            <!--                  Item active: "text-gray-600", Item inactive: "text-gray-800"-->
-            <!--                &ndash;&gt;-->
-            <!--                <svg aria-hidden="true" class="ml-2 h-5 w-5 text-gray-800 group-hover:text-gray-800"-->
-            <!--                     fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-            <!--                  <path clip-rule="evenodd"-->
-            <!--                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"-->
-            <!--                        fill-rule="evenodd"/>-->
-            <!--                </svg>-->
-            <!--              </button>-->
-            <!--            </div>-->
-            <!--            TODO Вернуть в мобильное меню-->
             <NuxtLink
               class="text-base px-1 font-medium rounded-md text-gray-800 hover:text-red-800 focus:text-red-800 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-indigo-500 hover:underline"
-              to="/contact"
+              to="/information/movers"
+              @click.native="close_visible"
+            >
+              Грузчики
+            </NuxtLink>
+            <NuxtLink
+              class="text-base px-1 font-medium rounded-md text-gray-800 hover:text-red-800 focus:text-red-800 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-indigo-500 hover:underline"
+              to="/information/contact"
               @click.native="close_visible"
             >
               Контакты
             </NuxtLink>
-            <a
-              class="text-base px-1 font-medium rounded-md text-gray-800 hover:text-red-800 focus:text-red-800 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-indigo-500 hover:underline"
-              href="https://vk.com/orbita_stroy"
-              target="_blank">
-              Наш VK
-            </a>
           </nav>
         </div>
       </div>
@@ -183,10 +143,6 @@ export default {
       'change_visibleInformation': 'navbar/visible/change_visibleInformation',
       'change_visibleMobileMenu': 'navbar/visible/change_visibleMobileMenu',
       'close_visible': 'navbar/visible/close_visible'
-      // 'getTotalSum': 'catalog/cart/getTotalSum'
-      // 'getLengthCart': 'catalog/cart/getLengthCart',
-      // 'setCurrentQuantityCart': 'catalog/cart/setCurrentQuantityCart',
-
     })
   },
   computed: {
