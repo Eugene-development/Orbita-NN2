@@ -86,45 +86,6 @@
           </nav>
         </div>
       </div>
-      <div v-if="false" class="py-6 px-5 bg-gray-200">
-        <div class="grid grid-cols-2 gap-4">
-          <a class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700" href="#">
-            Pricing
-          </a>
-
-          <a class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700" href="#">
-            Docs
-          </a>
-
-          <a class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700" href="#">
-            Company
-          </a>
-
-          <a class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700" href="#">
-            Resources
-          </a>
-
-          <a class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700" href="#">
-            Blog
-          </a>
-
-          <a class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700" href="#">
-            Contact Sales
-          </a>
-        </div>
-        <div class="mt-6">
-          <a class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
-             href="#">
-            Sign up
-          </a>
-          <p class="mt-6 text-center text-base font-medium text-gray-400">
-            Existing customer?
-            <a class="text-indigo-600 hover:text-indigo-500" href="#">
-              Sign in
-            </a>
-          </p>
-        </div>
-      </div>
     </div>
 
 
