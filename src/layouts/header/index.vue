@@ -3,14 +3,14 @@
 
     <!-- This example requires Tailwind CSS v2.0+ -->
     <header class="">
-      <nav class="max-w-7xl mx-auto py-2 px-4 sm:px-6 lg:px-8" aria-label="Top">
-        <div class="w-full flex items-center justify-between">
-          <div class="items-center justify-start">
+      <nav class="w-full mx-auto py-2 px-4 sm:px-4 lg:px-4" aria-label="Top">
+        <div class="w-full flex md:justify-between sm:justify-center">
+          <div class="items-left justify-start 	">
 <!--            <a href="#">-->
 <!--              <span class="sr-only">Workflow</span>-->
 <!--              <img class="h-10 w-auto" src="https://tailwindui.com/img/logos/workflow-mark.svg?color=white" alt="">-->
 <!--            </a>-->
-            <div class=" flex ml-10 space-x-8 ">
+            <div class="flex ml-10 space-x-8 ">
               <div class="flex items-center">
                 <svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor"
                      viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -64,7 +64,22 @@
 <!--              </a>-->
             </div>
           </div>
-          <div class=" flex ml-10 space-x-4 justify-start">
+
+
+<!--          <nav class=" flex py-2">-->
+<!--            <div class="sm:flex items-center space-x-10 mx-auto text-base sm:text-sm md:text-base">-->
+
+
+
+<!--            </div>-->
+<!--            &lt;!&ndash;      <div>&ndash;&gt;-->
+<!--            &lt;!&ndash;        <p>Корзина</p>&ndash;&gt;-->
+<!--            &lt;!&ndash;      </div>&ndash;&gt;-->
+<!--          </nav>-->
+
+
+
+          <div class=" flex space-x-4 hidden lg:flex">
             <div class="flex items-center">
               <svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor"
                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -72,7 +87,7 @@
                       d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
               </svg>
               <p class="ml-2">
-                Избранное (6)
+                Избранное (8)
               </p>
             </div>
 
@@ -93,15 +108,12 @@
               </NuxtLink>
             </div>
           </div>
+
+
+
+
         </div>
         <div class="py-4 flex flex-wrap justify-center space-x-6 lg:hidden">
-<!--          <a href="#" class="text-base font-medium text-white hover:text-indigo-50" key="Solutions">-->
-<!--            Solutions-->
-<!--          </a>-->
-
-<!--          <a href="#" class="text-base font-medium text-white hover:text-indigo-50" key="Pricing">-->
-<!--            Pricing-->
-<!--          </a>-->
 
           <div class="flex items-center">
             <svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor"
