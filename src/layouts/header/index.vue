@@ -4,8 +4,8 @@
     <!-- This example requires Tailwind CSS v2.0+ -->
     <header class="">
       <nav class="w-full mx-auto py-2 px-4 sm:px-4 lg:px-4" aria-label="Top">
-        <div class="w-full flex md:justify-between sm:justify-center">
-          <div class="items-left justify-start 	">
+        <div class="w-full flex md:justify-between ">
+          <div class="items-left justify-start sm:justify-center	">
 <!--            <a href="#">-->
 <!--              <span class="sr-only">Workflow</span>-->
 <!--              <img class="h-10 w-auto" src="https://tailwindui.com/img/logos/workflow-mark.svg?color=white" alt="">-->
@@ -23,7 +23,7 @@
                   8 (930) 688-88-62
                 </p>
               </div>
-              <div class="flex items-center">
+              <div class="flex items-center hidden lg:flex">
                 <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                      xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round"
@@ -34,7 +34,7 @@
                   Пн-Пт 8:00-17:30; Сб 9:00-16:00
                 </p>
               </div>
-              <div class="flex items-center">
+              <div class="flex items-center hidden lg:flex">
                 <svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor"
                      viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path
