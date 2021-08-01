@@ -2,89 +2,106 @@
   <div>
 
     <!-- This example requires Tailwind CSS v2.0+ -->
-    <header class="bg-indigo-600">
-      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
-        <div class="w-full py-6 flex items-center justify-between border-b border-indigo-500 lg:border-none">
-          <div class="flex items-center">
-            <a href="#">
-              <span class="sr-only">Workflow</span>
-              <img class="h-10 w-auto" src="https://tailwindui.com/img/logos/workflow-mark.svg?color=white" alt="">
-            </a>
-            <div class="hidden ml-10 space-x-8 lg:block">
-              <a href="#" class="text-base font-medium text-white hover:text-indigo-50" key="Solutions">
-                Solutions
-              </a>
+    <header class="">
+      <nav class="max-w-7xl mx-auto py-2 px-4 sm:px-6 lg:px-8" aria-label="Top">
+        <div class="w-full flex items-center justify-between">
+          <div class="items-center justify-start">
+<!--            <a href="#">-->
+<!--              <span class="sr-only">Workflow</span>-->
+<!--              <img class="h-10 w-auto" src="https://tailwindui.com/img/logos/workflow-mark.svg?color=white" alt="">-->
+<!--            </a>-->
+            <div class=" flex ml-10 space-x-8 ">
+              <div class="flex items-center">
+                <svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor"
+                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2"/>
+                </svg>
+                <p class="ml-2 text-red-900 animate-pulse">
+                  8 (930) 688-88-62
+                </p>
+              </div>
+              <div class="flex items-center">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"/>
+                </svg>
+                <p class="ml-2">
+                  Пн-Пт 8:00-17:30; Сб 9:00-16:00
+                </p>
+              </div>
+              <div class="flex items-center">
+                <svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor"
+                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2"/>
+                </svg>
+                <p class="ml-2">
+                  orbita88yuliya@mail.ru
+                </p>
+              </div>
 
-              <a href="#" class="text-base font-medium text-white hover:text-indigo-50" key="Pricing">
-                Pricing
-              </a>
+              <!--              <a href="#" class="text-base font-medium text-white hover:text-indigo-50" key="Solutions">-->
+<!--                Solutions-->
+<!--              </a>-->
 
-              <a href="#" class="text-base font-medium text-white hover:text-indigo-50" key="Docs">
-                Docs
-              </a>
+<!--              <a href="#" class="text-base font-medium text-white hover:text-indigo-50" key="Pricing">-->
+<!--                Pricing-->
+<!--              </a>-->
 
-              <a href="#" class="text-base font-medium text-white hover:text-indigo-50" key="Company">
-                Company
-              </a>
+<!--              <a href="#" class="text-base font-medium text-white hover:text-indigo-50" key="Docs">-->
+<!--                Docs-->
+<!--              </a>-->
+
+<!--              <a href="#" class="text-base font-medium text-white hover:text-indigo-50" key="Company">-->
+<!--                Company-->
+<!--              </a>-->
             </div>
           </div>
-          <div class="ml-10 space-x-4">
-            <a href="#" class="inline-block bg-indigo-500 py-2 px-4 border border-transparent rounded-md text-base font-medium text-white hover:bg-opacity-75">Sign in</a>
-            <a href="#" class="inline-block bg-white py-2 px-4 border border-transparent rounded-md text-base font-medium text-indigo-600 hover:bg-indigo-50">Sign up</a>
+          <div class=" flex ml-10 space-x-4 justify-start">
+            <div class="flex items-center">
+              <svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor"
+                   viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+              </svg>
+              <p class="ml-2">
+                Избранное (6)
+              </p>
+            </div>
+
+
+            <div class="flex items-center">
+              <svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor"
+                   viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                  stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2"></path>
+              </svg>
+              <NuxtLink
+                @click.native="cart()"
+                to="/shop/cart"
+                class="ml-2">
+                Корзина ({{lengthCart}})
+              </NuxtLink>
+            </div>
           </div>
         </div>
         <div class="py-4 flex flex-wrap justify-center space-x-6 lg:hidden">
-          <a href="#" class="text-base font-medium text-white hover:text-indigo-50" key="Solutions">
-            Solutions
-          </a>
+<!--          <a href="#" class="text-base font-medium text-white hover:text-indigo-50" key="Solutions">-->
+<!--            Solutions-->
+<!--          </a>-->
 
-          <a href="#" class="text-base font-medium text-white hover:text-indigo-50" key="Pricing">
-            Pricing
-          </a>
-
-        </div>
-      </nav>
-    </header>
-
-    <nav class=" flex py-2">
-      <div class="sm:flex items-center space-x-10 mx-auto text-base sm:text-sm md:text-base">
-          <div class="flex items-center">
-            <svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor"
-                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                stroke-linecap="round" stroke-linejoin="round"
-                stroke-width="2"/>
-            </svg>
-            <p class="ml-2 text-red-900 animate-pulse">
-              8 (930) 688-88-62
-            </p>
-          </div>
-          <div class="flex items-center">
-            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                 xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"/>
-            </svg>
-            <p class="ml-2">
-              Пн-Пт 8:00-17:30; Сб 9:00-16:00
-            </p>
-          </div>
-
-          <div class="flex items-center">
-            <svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor"
-                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                stroke-linecap="round" stroke-linejoin="round"
-                stroke-width="2"/>
-            </svg>
-            <p class="ml-2">
-              orbita88yuliya@mail.ru
-            </p>
-          </div>
-
+<!--          <a href="#" class="text-base font-medium text-white hover:text-indigo-50" key="Pricing">-->
+<!--            Pricing-->
+<!--          </a>-->
 
           <div class="flex items-center">
             <svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor"
@@ -114,11 +131,10 @@
             </NuxtLink>
           </div>
 
-      </div>
-      <!--      <div>-->
-      <!--        <p>Корзина</p>-->
-      <!--      </div>-->
-    </nav>
+
+        </div>
+      </nav>
+    </header>
 
     <!--скошенный BG-->
     <!--    <div class="relative px-6 py-10 bg-yellow-100 overflow-hidden  sm:px-12 sm:py-20">-->
@@ -239,7 +255,7 @@
           <div class="absolute inset-0 h-1/2 bg-yellow-50"></div>
           <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="w-full mx-auto">
-              <dl class="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-6">
+              <dl class="rounded-lg bg-white shadow-lg md:grid md:grid-cols-6">
                 <NuxtLink v-for="(head, idx) of allHeads" :key="allHeads.id"
                           :to="'/rubric/' + head.slug"
                           class="flex flex-col border-b border-gray-200 p-4 text-center sm:border-0 sm:border-r sm:border-l">
