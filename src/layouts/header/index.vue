@@ -2,15 +2,15 @@
   <div>
 
     <!-- This example requires Tailwind CSS v2.0+ -->
-    <header class="">
-      <nav class="w-full mx-auto py-2 px-4 sm:px-4 lg:px-4" aria-label="Top">
-        <div class="w-full flex md:justify-between ">
+    <header class="mr-2">
+      <nav class="w-full mx-auto py-3 px-4 sm:px-4 lg:px-4" aria-label="Top">
+        <div class="w-full flex lg:justify-between justify-center">
           <div class="items-left justify-start sm:justify-center	">
 <!--            <a href="#">-->
 <!--              <span class="sr-only">Workflow</span>-->
 <!--              <img class="h-10 w-auto" src="https://tailwindui.com/img/logos/workflow-mark.svg?color=white" alt="">-->
 <!--            </a>-->
-            <div class="flex ml-10 space-x-8 ">
+            <div class="flex ml-10 space-x-8 text-lg">
               <div class="flex items-center">
                 <svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor"
                      viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
