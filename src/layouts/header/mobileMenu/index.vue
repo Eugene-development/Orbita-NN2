@@ -83,6 +83,11 @@
             >
               Контакты
             </NuxtLink>
+            <a href="https://vk.com/orbita_stroy" aria-current="page" target="_blank"
+               class="text-base px-1 font-medium rounded-md text-gray-800 hover:text-red-800 focus:text-red-800 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-indigo-500 hover:underline">
+              VK
+            </a>
+
           </nav>
         </div>
       </div>

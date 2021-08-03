@@ -53,15 +53,15 @@
       <div class="ml-16 px-8 py-16 mx-auto">
         <div class="flex flex-wrap -m-4">
           <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <NuxtLink to="" class="block relative h-48 rounded overflow-hidden">
+            <NuxtLink to="/product/473" class="block relative h-48 rounded overflow-hidden">
               <img alt="ecommerce" class="object-cover object-center h-full block"
                    src="https://lumen-image-bucket.s3.eu-central-1.amazonaws.com/images/%D0%BF%D0%B5%D1%81.jpg">
             </NuxtLink>
 
-            <NuxtLink to="">
+            <NuxtLink to="/product/473">
               <div class="mt-4">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Цемент и универсальные смеси</h3>
-                <h2 class="text-gray-900 title-font text-lg font-medium">Пескобетон м-300</h2>
+                <h2 class="text-gray-900 title-font text-base font-medium">Пескобетон м-300</h2>
                 <p class="mt-1">125 руб/шт (25 кг)</p>
               </div>
             </NuxtLink>
@@ -69,99 +69,99 @@
 
           </div>
           <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <NuxtLink to="" class="block relative h-48 rounded overflow-hidden">
+            <NuxtLink to="/product/431" class="block relative h-48 rounded overflow-hidden">
               <img alt="ecommerce" class=" object-cover object-center h-full block"
                    src="https://lumen-image-bucket.s3.eu-central-1.amazonaws.com/images/EK-TG40.png">
             </NuxtLink>
-            <NuxtLink to="">
+            <NuxtLink to="/product/431">
               <div class="mt-4">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Штукатурка</h3>
-                <h2 class="text-gray-900 title-font text-lg font-medium">ШТУКАТУРНАЯ СМЕСЬ "ЕК" TG 40</h2>
-                <p class="mt-1">364 руб/шт (30 кг)</p>
+                <h2 class="text-gray-900 title-font text-base font-medium">ШТУКАТУРНАЯ СМЕСЬ "ЕК" TG 40</h2>
+                <p class="mt-1">373 руб/шт (30 кг)</p>
               </div>
             </NuxtLink>
 
           </div>
           <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <NuxtLink to="" class="block relative h-48 rounded overflow-hidden">
+            <NuxtLink to="/product/228" class="block relative h-48 rounded overflow-hidden">
               <img alt="ecommerce" class="object-cover object-center h-full block"
                    src="https://lumen-image-bucket.s3.eu-central-1.amazonaws.com/images/ilejI7dCV3zr72h4VudvlNrQLKBgHsrYwKd1HoAL.jpeg">
             </NuxtLink>
-            <NuxtLink to="">
+            <NuxtLink to="/product/228">
               <div class="mt-4">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Плита ОСБ</h3>
-                <h2 class="text-gray-900 title-font text-lg font-medium">Плита ОСБ-3 2500*1250*9мм</h2>
+                <h2 class="text-gray-900 title-font text-base font-medium">Плита ОСБ-3 2500*1250*9мм</h2>
                 <p class="mt-1">2200 руб/шт</p>
               </div>
             </NuxtLink>
 
           </div>
           <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <NuxtLink to="" class="block relative h-48 rounded overflow-hidden">
+            <NuxtLink to="/product/1015" class="block relative h-48 rounded overflow-hidden">
               <img alt="ecommerce" class="object-cover object-center h-full block"
                    src="https://lumen-image-bucket.s3.eu-central-1.amazonaws.com/images/o233615480a6fded9690ecb346.jpg">
             </NuxtLink>
-            <NuxtLink to="">
+            <NuxtLink to="/product/1015">
               <div class="mt-4">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Профнастил оцинкованный</h3>
-                <h2 class="text-gray-900 title-font text-lg font-medium">Профнастил с-10 1160*2000</h2>
+                <h2 class="text-gray-900 title-font text-base font-medium">Профнастил с-10 1160*2000</h2>
                 <p class="mt-1">1145 руб/шт</p>
               </div>
             </NuxtLink>
 
           </div>
           <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <NuxtLink to="" class="block relative h-48 rounded overflow-hidden">
+            <NuxtLink to="/product/417" class="block relative h-48 rounded overflow-hidden">
               <img alt="ecommerce" class="object-cover object-center h-full block"
                    src="https://lumen-image-bucket.s3.eu-central-1.amazonaws.com/images/zatirka-ceresit-se-33-super-2kg.jpg">
             </NuxtLink>
-            <NuxtLink to="">
+            <NuxtLink to="/product/417">
               <div class="mt-4">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Затирка для швов</h3>
-                <h2 class="text-gray-900 title-font text-lg font-medium">Затирка для швов "Церезит"</h2>
+                <h2 class="text-gray-900 title-font text-base font-medium">Затирка для швов "Церезит"</h2>
                 <p class="mt-1">185 руб/шт</p>
               </div>
             </NuxtLink>
 
           </div>
           <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <NuxtLink to="" class="block relative h-48 rounded overflow-hidden">
+            <NuxtLink to="/product/459" class="block relative h-48 rounded overflow-hidden">
               <img alt="ecommerce" class="object-cover object-center h-full block"
                    src="https://lumen-image-bucket.s3.eu-central-1.amazonaws.com/images/c1c0c26480f6ef55937fc2af8c8ded65.JPG">
             </NuxtLink>
-            <NuxtLink to="">
+            <NuxtLink to="/product/459">
               <div class="mt-4">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Цемент и универсальные смеси</h3>
-                <h2 class="text-gray-900 title-font text-lg font-medium">Цемент м-400 мордовцемент</h2>
-                <p class="mt-1">275 руб/шт (40 кг)</p>
+                <h2 class="text-gray-900 title-font text-base font-medium">Цемент м-400 мордовцемент</h2>
+                <p class="mt-1">285 руб/шт (40 кг)</p>
               </div>
             </NuxtLink>
 
           </div>
           <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <NuxtLink to="" class="block relative h-48 rounded overflow-hidden">
+            <NuxtLink to="/product/1812" class="block relative h-48 rounded overflow-hidden">
               <img alt="ecommerce" class="object-cover object-center h-full block"
                    src="https://lumen-image-bucket.s3.eu-central-1.amazonaws.com/images/beJO9NOqsav5tYtFkJFV9fJIkzDOmTsnI8chiUbT.jpg">
             </NuxtLink>
-            <NuxtLink to="">
+            <NuxtLink to="/product/1812">
               <div class="mt-4">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Смесители для кухни</h3>
-                <h2 class="text-gray-900 title-font text-lg font-medium">Смеситель д/кухни VENEZIA</h2>
+                <h2 class="text-gray-900 title-font text-base font-medium">Смеситель д/кухни VENEZIA</h2>
                 <p class="mt-1">3675 руб/шт</p>
               </div>
             </NuxtLink>
 
           </div>
           <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <NuxtLink to="" class="block relative h-48 rounded overflow-hidden">
+            <NuxtLink to="product/1945" class="block relative h-48 rounded overflow-hidden">
               <img alt="ecommerce" class="object-cover object-center h-full block"
                    src="https://lumen-image-bucket.s3.eu-central-1.amazonaws.com/images/%D1%87%D0%B5%D1%80%D0%B5%D0%BF%D0%B8%D1%86%D0%B0%20%D0%BA%D1%80%D0%B0%D1%81%D0%BD%D0%B0%D1%8F.jpg">
             </NuxtLink>
-            <NuxtLink to="">
+            <NuxtLink to="product/1945">
               <div class="mt-4">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Рулонная гидроизоляция</h3>
-                <h2 class="text-gray-900 title-font text-lg font-medium">Рулонная черепица красная</h2>
-                <p class="mt-1">1800 руб/шт</p>
+                <h2 class="text-gray-900 title-font text-base font-medium">Рулонная черепица красная</h2>
+                <p class="mt-1">2115 руб/шт</p>
               </div>
             </NuxtLink>
 

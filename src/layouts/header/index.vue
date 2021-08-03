@@ -80,16 +80,16 @@
 
 
           <div class=" flex space-x-4 hidden lg:flex">
-            <div class="flex items-center">
-              <svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor"
-                   viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
-              </svg>
-              <p class="ml-2">
-                Избранное (8)
-              </p>
-            </div>
+<!--            <div class="flex items-center">-->
+<!--              <svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor"-->
+<!--                   viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">-->
+<!--                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"-->
+<!--                      d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>-->
+<!--              </svg>-->
+<!--              <p class="ml-2">-->
+<!--                Избранное (8)-->
+<!--              </p>-->
+<!--            </div>-->
 
 
             <div class="flex items-center">
@@ -115,17 +115,16 @@
         </div>
         <div class="py-4 flex flex-wrap justify-center space-x-6 lg:hidden">
 
-          <div class="flex items-center">
-            <svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor"
-                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
-            </svg>
-            <p class="ml-2">
-              Избранное (6)
-            </p>
-          </div>
-
+<!--          <div class="flex items-center">-->
+<!--            <svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor"-->
+<!--                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">-->
+<!--              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"-->
+<!--                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>-->
+<!--            </svg>-->
+<!--            <p class="ml-2">-->
+<!--              Избранное (6)-->
+<!--            </p>-->
+<!--          </div>-->
 
           <div class="flex items-center">
             <svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor"
@@ -142,8 +141,6 @@
               Корзина ({{lengthCart}})
             </NuxtLink>
           </div>
-
-
         </div>
       </nav>
     </header>
@@ -215,25 +212,30 @@
                     to="/information/contact">
             Контакты
           </NuxtLink>
+          <a href="https://vk.com/orbita_stroy" aria-current="page" target="_blank"
+             class="pt-2 text-base font-medium text-gray-600 hover:text-gray-900">
+            VK
+          </a>
 
 
-          <div class="flex-1 flex justify-center px-2 lg:justify-end">
-            <div class="overflow-hidden shadow rounded-lg max-w-lg w-full lg:max-w-xs">
-              <label class="sr-only" for="search">Поиск</label>
-              <div class="relative">
-                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                    <path clip-rule="evenodd"
-                          d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                          fill-rule="evenodd"/>
-                  </svg>
-                </div>
-                <input id="search"
-                       class="block w-full pl-10 border border-transparent rounded-md leading-5 bg-white text-gray-700 placeholder-gray-500 focus:outline-none focus:bg-gray-100 focus:text-gray-700 sm:text-sm transition duration-150 ease-in-out"
-                       placeholder="Поиск" type="search">
-              </div>
-            </div>
-          </div>
+
+          <!--          <div class="flex-1 flex justify-center px-2 lg:justify-end">-->
+<!--            <div class="overflow-hidden shadow rounded-lg max-w-lg w-full lg:max-w-xs">-->
+<!--              <label class="sr-only" for="search">Поиск</label>-->
+<!--              <div class="relative">-->
+<!--                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">-->
+<!--                  <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">-->
+<!--                    <path clip-rule="evenodd"-->
+<!--                          d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"-->
+<!--                          fill-rule="evenodd"/>-->
+<!--                  </svg>-->
+<!--                </div>-->
+<!--                <input id="search"-->
+<!--                       class="block w-full pl-10 border border-transparent rounded-md leading-5 bg-white text-gray-700 placeholder-gray-500 focus:outline-none focus:bg-gray-100 focus:text-gray-700 sm:text-sm transition duration-150 ease-in-out"-->
+<!--                       placeholder="Поиск" type="search">-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
         </nav>
         <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
           <a class="whitespace-nowrap text-base font-medium text-gray-600 hover:text-gray-900"
@@ -354,15 +356,15 @@
           </div>
 
 
-          <div class="flex items-center">
-            <svg class="flex-shrink-0 h-5 w-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                 viewBox="0 0 20 20" aria-hidden="true">
-              <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"/>
-            </svg>
-            <a href="https://vk.com/orbita_stroy" aria-current="page" target="_blank"
-                      class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700"> VK
-            </a>
-          </div>
+<!--          <div class="flex items-center">-->
+<!--            <svg class="flex-shrink-0 h-5 w-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor"-->
+<!--                 viewBox="0 0 20 20" aria-hidden="true">-->
+<!--              <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"/>-->
+<!--            </svg>-->
+<!--            <a href="https://vk.com/orbita_stroy" aria-current="page" target="_blank"-->
+<!--                      class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700"> VK-->
+<!--            </a>-->
+<!--          </div>-->
       </div>
     </nav>
 
