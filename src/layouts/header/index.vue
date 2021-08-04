@@ -269,12 +269,22 @@
           <div class="absolute inset-0 h-1/2 bg-yellow-50"></div>
           <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="w-full mx-auto">
-              <dl class="rounded-lg bg-white shadow-lg md:grid md:grid-cols-6">
+              <dl class="rounded-lg bg-white shadow-lg lg:grid lg:grid-cols-7">
                 <NuxtLink v-for="(head, idx) of allHeads" :key="allHeads.id"
                           :to="'/rubric/' + head.slug"
                           class="flex flex-col border-b border-gray-200 p-4 text-center sm:border-0 sm:border-r sm:border-l">
-                  <dt class="order-2 mt-2 text-lg leading-6 font-medium text-gray-800">
+                  <dt class="order-2 mt-2 text-base leading-6 font-medium text-gray-800">
                     {{ head.name }}
+                  </dt>
+                  <!--                  <dd class="order-1 text-5xl font-extrabold text-indigo-600">-->
+                  <!--                    86-->
+                  <!--                  </dd>-->
+                </NuxtLink>
+                <NuxtLink
+                          to="/rubric/okna"
+                          class="flex flex-col border-b border-gray-200 p-4 text-center sm:border-0 sm:border-r sm:border-l">
+                  <dt class="order-2 mt-2 text-base leading-6 font-medium text-gray-800">
+                    Окна
                   </dt>
                   <!--                  <dd class="order-1 text-5xl font-extrabold text-indigo-600">-->
                   <!--                    86-->
@@ -306,7 +316,8 @@
             <!--                 viewBox="0 0 20 20" aria-hidden="true">-->
             <!--              <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"/>-->
             <!--            </svg>-->
-            <NuxtLink to="/information/discount" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">
+            <NuxtLink to="/information/discount"
+                      class="ml-4 text-xs md:text-sm font-medium text-gray-600 hover:text-gray-700">
               Скидки
             </NuxtLink>
           </div>
@@ -318,7 +329,7 @@
               <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"/>
             </svg>
             <NuxtLink to="/information/testimonials" aria-current="page"
-                      class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Отзывы
+                      class="ml-4 text-xs md:text-sm font-medium text-gray-600 hover:text-gray-700">Отзывы
             </NuxtLink>
           </div>
 
@@ -329,7 +340,7 @@
               <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"/>
             </svg>
             <NuxtLink to="/information/partner" aria-current="page"
-                      class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Партнёрам
+                      class="ml-4 text-xs md:text-sm font-medium text-gray-600 hover:text-gray-700">Партнёрам
             </NuxtLink>
           </div>
 
@@ -340,7 +351,7 @@
               <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"/>
             </svg>
             <NuxtLink to="/information/client" aria-current="page"
-                      class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Клиентам
+                      class="ml-4 text-xs md:text-sm font-medium text-gray-600 hover:text-gray-700">Клиентам
             </NuxtLink>
           </div>
 
@@ -351,7 +362,7 @@
               <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"/>
             </svg>
             <NuxtLink to="/information/action" aria-current="page"
-                      class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Акции
+                      class="ml-4 text-xs md:text-sm font-medium text-gray-600 hover:text-gray-700">Акции
             </NuxtLink>
           </div>
 

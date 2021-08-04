@@ -21,7 +21,7 @@
         <div v-for="(rubric, idx) of head.rubric" :key="head.id"
              class="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
           <div class="p-6">
-            <p class="text-lg leading-6 font-medium text-gray-900">{{ head.name }}</p>
+            <p class="text-lg leading-6 font-medium text-indigo-600">{{ head.name }}</p>
 <!--            <p class="mt-4 text-sm text-gray-500">Недорогой и качественный пиломатериал</p>-->
             <h2 class="mt-8">
               <span class="text-2xl font-extrabold text-gray-900">{{ rubric.name }}</span>

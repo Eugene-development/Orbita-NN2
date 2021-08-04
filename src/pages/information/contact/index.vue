@@ -40,8 +40,9 @@
                 </defs>
               </svg>
             </div>
-            <h3 class="text-lg font-medium text-white">Контактная информация</h3>
-            <p class="mt-6 text-base text-indigo-50 max-w-3xl">Нижний Новгород, Автозаводский район, <br> ул. Зеленхозовская 4-а.</p>
+            <h3 class="text-xl font-medium text-white">Контактная информация</h3>
+            <p class="mt-6 text-base text-indigo-50 max-w-3xl">Нижний Новгород, Автозаводский район, <br> ул. Зеленхозовская 4-а (пластиковые окна)</p>
+            <p class="mt-6 text-base text-indigo-50 max-w-3xl">Дзержинск, Зарёвская объездная, <br> пр. Ленина, 121-В (строительные материалы)</p>
             <dl class="mt-8 space-y-6">
               <dt><span class="sr-only">Телефон</span></dt>
               <dd class="flex text-base text-indigo-50">
