@@ -34,6 +34,8 @@ export const actions = {
   async getProduct({commit, state}, payload) {
 
     //Получил Id продукта по слагу в пейлоаде
+
+    //TODO не оптимизированно
     const products = await this.$axios.$get('get-all-product', state.apiCRUD);
 
     forEach(products, function (value) {
