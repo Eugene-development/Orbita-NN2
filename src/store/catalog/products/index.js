@@ -33,8 +33,6 @@ export const actions = {
 
   async getProduct({commit, state}, payload) {
 
-    console.log(payload);
-
     //Получил Id продукта по слагу в пейлоаде
     const products = await this.$axios.$get('get-all-product', state.apiCRUD);
 
@@ -43,12 +41,8 @@ export const actions = {
       commit('PRODUCT_ID', id);
     });
 
-
     const pathAWS = state.pathAWSBucket.path
     commit('PATH_AWS', pathAWS)
-
-    const id = payload.id;
-
 
 
     // await this.$axios.setToken('1', 'Bearer')
