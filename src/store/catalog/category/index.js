@@ -41,10 +41,7 @@ export const actions = {
     });
 
     const {data} = await this.$axios.$get('get-where-rubric-category-count-text/' + state.rubricID, state.apiCRUD);
-    // const rubricID = payload.id;
-//TODO Слабое место. Баг при перезагрузке
     commit('ALL_CATEGORIES', data);
-    // commit('RUBRIC_ID', rubricID);
   },
 
   async getProducts({commit, state}, payload) {

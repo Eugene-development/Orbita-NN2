@@ -13,7 +13,7 @@
         <li v-for="(product, idx) of products.product" :key="product.id"
             class="col-span-1 flex flex-col text-center bg-white rounded-lg shadow-lg divide-y divide-gray-200">
           <NuxtLink
-            :to="'/product/' + product.id">
+            :to="'/product/' + product.slug">
           <div class="flex-1 flex flex-col p-8">
               <img
                 v-for="(image, idx) of product.image" :key="image.id"

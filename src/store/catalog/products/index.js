@@ -1,9 +1,10 @@
-import { map } from 'lodash';
+import {find, forEach, map} from 'lodash';
 
 export const state = () => ({
   product: [],
   category: [],
   pathAWS: '',
+  productId: null,
 
   visibleDescription: true,
   visiblePayment: false,
@@ -32,6 +33,17 @@ export const actions = {
 
   async getProduct({commit, state}, payload) {
 
+    console.log(payload);
+
+    //Получил Id продукта по слагу в пейлоаде
+    const products = await this.$axios.$get('get-all-product', state.apiCRUD);
+
+    forEach(products, function (value) {
+      const {id} = find(value, {'slug': payload.slug});
+      commit('PRODUCT_ID', id);
+    });
+
+
     const pathAWS = state.pathAWSBucket.path
     commit('PATH_AWS', pathAWS)
 
@@ -43,7 +55,7 @@ export const actions = {
     // this.$axios.setHeader('Authorization', '1');
     // this.$axios.setToken('1');
 
-    const { data } = await this.$axios.$get('get-one-product/' + id, state.apiCRUD);
+    const { data } = await this.$axios.$get('get-one-product/' + state.productId, state.apiCRUD);
     commit('PRODUCT', data);
 
 
@@ -86,6 +98,7 @@ export const mutations = {
   VISIBLE_DESCRIPTION: (state, visibleDescription) => state.visibleDescription = visibleDescription,
   VISIBLE_PAYMENT: (state, visiblePayment) => state.visiblePayment = visiblePayment,
   VISIBLE_DELiVERY: (state, visibleDelivery) => state.visibleDelivery = visibleDelivery,
+  PRODUCT_ID: (state, id) => state.productId = id,
 };
 
 export const getters = {

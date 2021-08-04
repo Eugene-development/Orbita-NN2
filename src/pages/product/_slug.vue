@@ -45,14 +45,14 @@
 
 
               <NuxtLink v-for="(category, idx) of category" :key="category.id"
-                :to="'/products/' + category.slug">
-              <div
-                   class="flex border-t border-gray-200 py-2">
-                <span class="text-gray-500">Категория</span>
-                <span class="ml-auto text-gray-900">
+                        :to="'/products/' + category.slug">
+                <div
+                  class="flex border-t border-gray-200 py-2">
+                  <span class="text-gray-500">Категория</span>
+                  <span class="ml-auto text-gray-900">
                   {{ category.name }}
                 </span>
-              </div>
+                </div>
               </NuxtLink>
 
               <div class="flex border-t border-gray-200 py-2">
@@ -72,8 +72,8 @@
                   wfd-id="157">В корзину
                 </button>
                 <button v-else
-                  class="flex ml-auto text-white bg-red-900 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-900 rounded"
-                  wfd-id="157">Товар в корзине
+                        class="flex ml-auto text-white bg-red-900 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-900 rounded"
+                        wfd-id="157">Товар в корзине
                 </button>
                 <button
                   class="rounded-full w-10 h-10 bg-gray-100 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4 hover:bg-red-900"
@@ -87,10 +87,10 @@
               </div>
             </div>
 
-              <img
-                v-for="(image, idx) of item.image" :key="image.id"
-                alt="ecommerce" class="lg:w-1/2 max-w-xl object-contain object-top rounded"
-                :src="`${pathAWS}${image.filename}`">
+            <img
+              v-for="(image, idx) of item.image" :key="image.id"
+              alt="ecommerce" class="lg:w-1/2 max-w-xl object-contain object-top rounded"
+              :src="`${pathAWS}${image.filename}`">
 
           </div>
         </div>
@@ -106,7 +106,7 @@ import { mapActions, mapGetters } from "vuex";
 export default {
   async asyncData({store, params}) {
     await store.dispatch('catalog/products/getProduct', {
-      id: params.id
+      slug: params.slug,
     })
   },
 
