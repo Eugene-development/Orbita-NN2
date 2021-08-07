@@ -113,22 +113,22 @@ export default {
       pathAWS: 'catalog/category/pathAWS',
       productsInCart: 'catalog/cart/productsInCart',
     }),
-    myTitle: function () {
+    seoTitle: function () {
       return this.products.seo ? this.products.seo.title : ''
     },
-    myDescription: function () {
+    seoDescription: function () {
       return this.products.seo ? this.products.seo.description : ''
     }
   },
 
   head() {
     return {
-      title: 'Стройбаза "Орбита" Нижний Новгород || ' + this.myTitle,
+      title: 'Стройбаза "Орбита" Нижний Новгород || ' + this.seoTitle,
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'Стройматериалы в Нижнем Новгороде. ' + this.myDescription
+          content: 'Стройматериалы в Нижнем Новгороде. ' + this.seoDescription
         }
       ]
     }
