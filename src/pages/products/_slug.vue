@@ -1,8 +1,8 @@
 <template>
   <div class="bg-blueGray-50">
-    <div class="p-10 mx-auto sm:px-6 lg:px-8 bg-gradient-to-b from-white to-yellow-50 shadow-lg mb-4">
+    <div class="p-8 mx-auto sm:px-6 lg:px-8 bg-gradient-to-b from-white to-yellow-50 shadow-lg mb-4">
       <div class="flex flex-col text-center w-full">
-        <h1 class=" text-5xl font-medium title-font text-gray-900">{{ products.name }}</h1>
+        <h1 class="text-4xl font-medium title-font text-gray-900">{{ products.name }} в Нижнем Новгороде</h1>
       </div>
     </div>
 
@@ -24,7 +24,7 @@
             <dl class="mt-1 flex-grow flex flex-col justify-between">
               <dt class="sr-only">Title</dt>
               <hr class="mt-4">
-              <!--            <dd class="text-gray-500 text-sm">Paradigm Representative</dd>-->
+<!--                          <dd class="text-gray-500 text-sm">цена</dd>-->
               <dt class="sr-only">Role</dt>
               <dd class="mt-3">
                 <span class="px-2 py-1 text-green-800 text-base font-medium bg-green-100 rounded-full">{{
@@ -82,7 +82,6 @@
             </div>
           </div>
         </li>
-        <!--{{seo.title}}-->
       </ul>
 
     </div>
@@ -104,7 +103,6 @@ export default {
   methods: {
     ...mapActions({
         'sendToCart': 'catalog/cart/sendToCart',
-        // 'getSeo': 'catalog/category/getSeo'
       }
     )
   },
@@ -114,54 +112,21 @@ export default {
       products: 'catalog/category/products',
       pathAWS: 'catalog/category/pathAWS',
       productsInCart: 'catalog/cart/productsInCart',
-      // seo: 'catalog/category/seo'
     }),
   },
 
-  // head() {
-  //   return {
-  //     title: this.seo.title,
-  //     meta: [
-  //       {
-  //         hid: 'description',
-  //         name: 'description',
-  //         content: this.seo.description
-  //       }
-  //     ]
-  //   }
-  // },
-
-
-
-
-
-
-
-
-  //Не подходит. Нужно суо с сервера уже получать
-  // mounted() {
-  //   this.getSeo('31');
-  // },
-
-
-  // async asyncData({store, params}, allRubric) {
-  //   await store.dispatch('catalog/category/fetch', {
-  //     id: 1
-  //   });
-  //
-  //   await store.dispatch('catalog/category/getProduct', {
-  //     allRubric: allRubric,
-  //     slug: params.slug
-  //   })
-  // },
-  //
-  //
-  // methods: {
-  //   ...mapActions({
-  //     'getBread': 'catalog/category/fetch2',
-  //   })
-  // },
-
+  head() {
+    return {
+      title: 'Стройбаза "Орбита" Нижний Новгород || ' + this.products.seo.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Стройматериалы в Нижнем Новгороде || ' + this.products.seo.description
+        }
+      ]
+    }
+  },
 
 }
 </script>

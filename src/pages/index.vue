@@ -53,12 +53,12 @@
       <div class="ml-16 px-8 py-16 mx-auto">
         <div class="flex flex-wrap -m-4">
           <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <NuxtLink to="/product/473" class="block relative h-48 rounded overflow-hidden">
+            <NuxtLink to="/product/peskobeton-m-300-25-kg" class="block relative h-48 rounded overflow-hidden">
               <img alt="ecommerce" class="object-cover object-center h-full block"
                    src="https://lumen-image-bucket.s3.eu-central-1.amazonaws.com/images/%D0%BF%D0%B5%D1%81.jpg">
             </NuxtLink>
 
-            <NuxtLink to="/product/473">
+            <NuxtLink to="/product/peskobeton-m-300-25-kg">
               <div class="mt-4">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Цемент и универсальные смеси</h3>
                 <h2 class="text-gray-900 title-font text-base font-medium">Пескобетон м-300</h2>
@@ -69,11 +69,11 @@
 
           </div>
           <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <NuxtLink to="/product/431" class="block relative h-48 rounded overflow-hidden">
+            <NuxtLink to="/product/stukaturnaya-smes-ek-tg-20-30-kg" class="block relative h-48 rounded overflow-hidden">
               <img alt="ecommerce" class=" object-cover object-center h-full block"
                    src="https://lumen-image-bucket.s3.eu-central-1.amazonaws.com/images/EK-TG40.png">
             </NuxtLink>
-            <NuxtLink to="/product/431">
+            <NuxtLink to="/product/stukaturnaya-smes-ek-tg-20-30-kg">
               <div class="mt-4">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Штукатурка</h3>
                 <h2 class="text-gray-900 title-font text-base font-medium">ШТУКАТУРНАЯ СМЕСЬ "ЕК" TG 40</h2>
@@ -83,11 +83,11 @@
 
           </div>
           <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <NuxtLink to="/product/228" class="block relative h-48 rounded overflow-hidden">
+            <NuxtLink to="/product/plita-osb-3-250012509mm-kronospan-gost-vlagostoikaya" class="block relative h-48 rounded overflow-hidden">
               <img alt="ecommerce" class="object-cover object-center h-full block"
                    src="https://lumen-image-bucket.s3.eu-central-1.amazonaws.com/images/ilejI7dCV3zr72h4VudvlNrQLKBgHsrYwKd1HoAL.jpeg">
             </NuxtLink>
-            <NuxtLink to="/product/228">
+            <NuxtLink to="/product/plita-osb-3-250012509mm-kronospan-gost-vlagostoikaya">
               <div class="mt-4">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Плита ОСБ</h3>
                 <h2 class="text-gray-900 title-font text-base font-medium">Плита ОСБ-3 2500*1250*9мм</h2>
@@ -97,11 +97,11 @@
 
           </div>
           <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <NuxtLink to="/product/1015" class="block relative h-48 rounded overflow-hidden">
+            <NuxtLink to="/product/profnastil-s-10-11602000-ocinkovannyi" class="block relative h-48 rounded overflow-hidden">
               <img alt="ecommerce" class="object-cover object-center h-full block"
                    src="https://lumen-image-bucket.s3.eu-central-1.amazonaws.com/images/o233615480a6fded9690ecb346.jpg">
             </NuxtLink>
-            <NuxtLink to="/product/1015">
+            <NuxtLink to="/product/profnastil-s-10-11602000-ocinkovannyi">
               <div class="mt-4">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Профнастил оцинкованный</h3>
                 <h2 class="text-gray-900 title-font text-base font-medium">Профнастил с-10 1160*2000</h2>
@@ -111,11 +111,11 @@
 
           </div>
           <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <NuxtLink to="/product/417" class="block relative h-48 rounded overflow-hidden">
+            <NuxtLink to="/product/zatirka-dlya-svov-cerezit-01-belaya-2-kg" class="block relative h-48 rounded overflow-hidden">
               <img alt="ecommerce" class="object-cover object-center h-full block"
                    src="https://lumen-image-bucket.s3.eu-central-1.amazonaws.com/images/zatirka-ceresit-se-33-super-2kg.jpg">
             </NuxtLink>
-            <NuxtLink to="/product/417">
+            <NuxtLink to="/product/zatirka-dlya-svov-cerezit-01-belaya-2-kg">
               <div class="mt-4">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Затирка для швов</h3>
                 <h2 class="text-gray-900 title-font text-base font-medium">Затирка для швов "Церезит"</h2>
@@ -125,11 +125,11 @@
 
           </div>
           <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <NuxtLink to="/product/459" class="block relative h-48 rounded overflow-hidden">
+            <NuxtLink to="/product/cement-m-400-mordovcement-a-p-325n-40-kg" class="block relative h-48 rounded overflow-hidden">
               <img alt="ecommerce" class="object-cover object-center h-full block"
                    src="https://lumen-image-bucket.s3.eu-central-1.amazonaws.com/images/c1c0c26480f6ef55937fc2af8c8ded65.JPG">
             </NuxtLink>
-            <NuxtLink to="/product/459">
+            <NuxtLink to="/product/cement-m-400-mordovcement-a-p-325n-40-kg">
               <div class="mt-4">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Цемент и универсальные смеси</h3>
                 <h2 class="text-gray-900 title-font text-base font-medium">Цемент м-400 мордовцемент</h2>
@@ -139,11 +139,11 @@
 
           </div>
           <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <NuxtLink to="/product/1812" class="block relative h-48 rounded overflow-hidden">
+            <NuxtLink to="/product/smesitel-dkuxni-venezia-ve05" class="block relative h-48 rounded overflow-hidden">
               <img alt="ecommerce" class="object-cover object-center h-full block"
                    src="https://lumen-image-bucket.s3.eu-central-1.amazonaws.com/images/beJO9NOqsav5tYtFkJFV9fJIkzDOmTsnI8chiUbT.jpg">
             </NuxtLink>
-            <NuxtLink to="/product/1812">
+            <NuxtLink to="/product/smesitel-dkuxni-venezia-ve05">
               <div class="mt-4">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Смесители для кухни</h3>
                 <h2 class="text-gray-900 title-font text-base font-medium">Смеситель д/кухни VENEZIA</h2>
@@ -153,11 +153,11 @@
 
           </div>
           <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <NuxtLink to="product/1945" class="block relative h-48 rounded overflow-hidden">
+            <NuxtLink to="product/rulonnaya-cerepica-texnonikol-kirpicnaya-kladka-8m2" class="block relative h-48 rounded overflow-hidden">
               <img alt="ecommerce" class="object-cover object-center h-full block"
                    src="https://lumen-image-bucket.s3.eu-central-1.amazonaws.com/images/%D1%87%D0%B5%D1%80%D0%B5%D0%BF%D0%B8%D1%86%D0%B0%20%D0%BA%D1%80%D0%B0%D1%81%D0%BD%D0%B0%D1%8F.jpg">
             </NuxtLink>
-            <NuxtLink to="product/1945">
+            <NuxtLink to="product/rulonnaya-cerepica-texnonikol-kirpicnaya-kladka-8m2">
               <div class="mt-4">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Рулонная гидроизоляция</h3>
                 <h2 class="text-gray-900 title-font text-base font-medium">Рулонная черепица красная</h2>
