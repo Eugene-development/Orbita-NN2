@@ -114,21 +114,21 @@ export default {
       productsInCart: 'catalog/cart/productsInCart',
     }),
     seoTitle: function () {
-      return this.products.seo ? this.products.seo.title : ''
+      return this.products.seo ? this.products.seo.title : 'Стройматериалы'
     },
     seoDescription: function () {
-      return this.products.seo ? this.products.seo.description : ''
+      return this.products.seo ? this.products.seo.description : 'Стройматериалы в Нижнем новгороде'
     }
   },
 
   head() {
     return {
-      title: 'Стройбаза "Орбита" Нижний Новгород || ' + this.seoTitle,
+      title: 'Стройбаза "Орбита" Нижний Новгород || ' + this.products.name + ' || ' + this.seoTitle,
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'Стройматериалы в Нижнем Новгороде. ' + this.seoDescription
+          content: this.products.name + ' в Нижнем Новгороде. ' + this.seoDescription
         }
       ]
     }

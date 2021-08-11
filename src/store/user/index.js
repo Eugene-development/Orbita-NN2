@@ -2,7 +2,6 @@ const { v4 } = require("uuid");
 
 export const state = () => ({
   sessionUser: '',
-
 });
 
 

@@ -11,7 +11,7 @@
 import Header from './header'
 import Footer from './footer'
 
-import { mapActions, mapGetters } from "vuex";
+import { mapActions } from "vuex";
 
 
 export default {
