@@ -123,7 +123,7 @@ export default {
 
   head() {
     return {
-      title: 'Стройбаза "Орбита" Нижний Новгород || ' + this.products.name + ' || ' + this.seoTitle,
+      title: 'Стройбаза Орбита Строй Нижний Новгород || ' + this.products.name + ' || ' + this.seoTitle,
       meta: [
         {
           hid: 'description',

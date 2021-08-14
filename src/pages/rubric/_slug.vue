@@ -76,7 +76,32 @@ export default {
     ...mapGetters({
       head: 'catalog/rubric/head',
     }),
+    rubricName: function () {
+      return this.head.name;
+    },
+    seoTitle: function () {
+      return this.head.seo ? this.head.seo.title : 'Отделочные и строительные материалы';
+    },
+    seoDescription: function () {
+      return this.head.seo ? this.head.seo.description : 'Материалы для строительства и отделочных работ';
+    }
+
   },
+
+
+  head() {
+    return {
+      title: 'База стройматериалов Орбита-Строй в Нижнем Новгороде || ' + this.rubricName + ' || ' + this.seoTitle,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.rubricName + ' в Нижнем Новгороде и области. ' + this.seoDescription
+        }
+      ]
+    }
+  },
+
 
 
 }
