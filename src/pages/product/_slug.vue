@@ -129,6 +129,30 @@ export default {
       visibleDelivery: 'catalog/products/visibleDelivery',
       productsInCart: 'catalog/cart/productsInCart',
     }),
+    productName: function () {
+      return this.product[0].name;
+    },
+    seoTitle: function () {
+      return this.product.seo ? this.product.seo.title : 'Строительные материалы';
+    },
+    seoDescription: function () {
+      return this.product.seo ? this.product.seo.description : 'Строительные материалы в Дзержинске';
+    }
+
   },
+
+  head() {
+    return {
+      title: this.productName + ' || Стройбаза Орбита-строй Нижний Новгород' + ' || ' + this.seoTitle,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.productName + ' в Нижнем Новгороде. ' + this.seoDescription
+        }
+      ]
+    }
+  },
+
 }
 </script>
