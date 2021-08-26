@@ -340,7 +340,7 @@
               <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"/>
             </svg>
             <NuxtLink to="/information/partner" aria-current="page"
-                      class="ml-4 text-xs md:text-sm font-medium text-gray-600 hover:text-gray-700">Партнёрам
+                      class="ml-4 text-xs md:text-sm font-medium text-gray-600 hover:text-gray-700">Партнёры
             </NuxtLink>
           </div>
 

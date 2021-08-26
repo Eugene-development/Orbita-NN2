@@ -1,40 +1,40 @@
 <template>
   <div>
-    <!--    <div class="mt-4 relative">-->
-    <!--      <div class=" mx-auto">-->
-    <!--        <div class="relative shadow-xl  sm:overflow-hidden">-->
-    <!--          <div class="absolute inset-0">-->
-    <!--            <img alt="home" class="h-full w-full object-cover" src="/slider/slider4.jpg">-->
-    <!--            <div class="absolute inset-0 bg-gradient-to-r from-blueGray-300 to-blueGray-500"-->
-    <!--                 style="mix-blend-mode: multiply;"></div>-->
-    <!--          </div>-->
-    <!--          <div class="relative px-3 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">-->
-    <!--            <h1 class="mb-12 text-center text-5xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">-->
-    <!--              <span class="block text-white mb-4">База строительных и отделочных материалов</span>-->
-    <!--              <span class="block text-indigo-300">"Орбита-строй"</span>-->
-    <!--            </h1>-->
-    <!--            <hr>-->
-    <!--            <h2 class="mt-6 max-w-lg mx-auto text-center text-3xl text-indigo-100 sm:max-w-3xl">-->
-    <!--              Строительные и отделочные материалы <br> оптом и в розницу-->
-    <!--            </h2>-->
+        <div class="mt-4 relative">
+          <div class=" mx-auto">
+            <div class="relative shadow-xl  sm:overflow-hidden">
+              <div class="absolute inset-0">
+                <img alt="home" class="h-full w-full object-cover" src="/slider/slider4.jpg">
+                <div class="absolute inset-0 bg-gradient-to-r from-blueGray-300 to-blueGray-500"
+                     style="mix-blend-mode: multiply;"></div>
+              </div>
+              <div class="relative px-3 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+                <h1 class="mb-12 text-center text-5xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                  <span class="block text-white mb-4">База строительных и отделочных материалов</span>
+                  <span class="block text-indigo-300">"Орбита-строй"</span>
+                </h1>
+                <hr>
+                <h2 class="mt-6 max-w-lg mx-auto text-center text-3xl text-indigo-100 sm:max-w-3xl">
+                  Стройматериалы, инструмент, сантехника, электрика и отделочные материалы<br> оптом и в розницу
+                </h2>
 
-    <!--            &lt;!&ndash;                    <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">&ndash;&gt;-->
-    <!--            &lt;!&ndash;                      <div class="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">&ndash;&gt;-->
-    <!--            &lt;!&ndash;                        <NuxtLink to="/office/dashboard" class="flex items-center justify-center px-3 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8">&ndash;&gt;-->
-    <!--            &lt;!&ndash;                          Начать&ndash;&gt;-->
-    <!--            &lt;!&ndash;                        </NuxtLink>&ndash;&gt;-->
-    <!--            &lt;!&ndash;                        <button&ndash;&gt;-->
-    <!--            &lt;!&ndash;                          class="flex items-center justify-center px-3 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8"&ndash;&gt;-->
-    <!--            &lt;!&ndash;                          role="menuitem"&ndash;&gt;-->
-    <!--            &lt;!&ndash;                          @click.stop.once="logout">Выход&ndash;&gt;-->
-    <!--            &lt;!&ndash;                        </button>&ndash;&gt;-->
+                <!--                    <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">-->
+                <!--                      <div class="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">-->
+                <!--                        <NuxtLink to="/office/dashboard" class="flex items-center justify-center px-3 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8">-->
+                <!--                          Начать-->
+                <!--                        </NuxtLink>-->
+                <!--                        <button-->
+                <!--                          class="flex items-center justify-center px-3 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8"-->
+                <!--                          role="menuitem"-->
+                <!--                          @click.stop.once="logout">Выход-->
+                <!--                        </button>-->
 
-    <!--            &lt;!&ndash;                      </div>&ndash;&gt;-->
-    <!--            &lt;!&ndash;                    </div>&ndash;&gt;-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--      </div>-->
-    <!--    </div>-->
+                <!--                      </div>-->
+                <!--                    </div>-->
+              </div>
+            </div>
+          </div>
+        </div>
 
 
     <div class="mt-20 max-w-7xl mx-auto sm:px-6 lg:px-8">
