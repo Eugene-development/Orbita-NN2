@@ -142,7 +142,7 @@ export default {
 
   head() {
     return {
-      title: this.productName + ' в Нижнем новгороде' + ' || ' + this.seoTitle,
+      title: this.productName + ' в Нижнем Новгороде' + ' || ' + this.seoTitle,
       meta: [
         {
           hid: 'description',
