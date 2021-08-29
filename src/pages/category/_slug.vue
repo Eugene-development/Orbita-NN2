@@ -166,7 +166,8 @@ export default {
 
   head() {
     return {
-      title: 'Строительная база Орбита-Строй в Нижнем Новгороде || ' + this.categoryName + ' || ' + this.seoTitle,
+      title: 'Стройматериалы' +
+        ' || ' + this.categoryName + ' в Нижнем Новгороде || ' + this.seoTitle,
       meta: [
         {
           hid: 'description',
