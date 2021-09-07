@@ -10,7 +10,7 @@
 
 
       <div class="mx-4 flex  ">
-        <div class="flex w-1/5 max-w-sm flex-col flex-grow border-r border-gray-200 pt-8 pb-4 overflow-y-auto hidden md:block">
+        <div class="flex w-1/5 max-w-sm flex-col flex-grow border-r border-gray-200 pt-8 pb-4 overflow-y-auto           hidden xl:block">
           <div class="mb-6 flex items-center flex-shrink-0 px-4">
             <!--          <svg class="text-gray-500 mr-3 h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"-->
             <!--               xmlns="http://www.w3.org/2000/svg">-->
@@ -53,7 +53,17 @@
         </div>
 
         <!-- This example requires Tailwind CSS v2.0+ -->
-        <div class="relative pt-8 pb-20 px-4 sm:px-6 lg:pt-8 lg:pb-28 lg:px-8">
+        <div class="relative pt-8 pb-20 px-4 sm:px-6 lg:pt-8 lg:pb-12 lg:px-8">
+
+
+          <div v-if="allCategories[0].text" class="relative px-8 sm:px-8 lg:px-8">
+            <div class="max-w-7xl">
+              <p class="mt-6 text-2xl text-center text-gray-900 leading-8"  v-html="allCategories[0].text.descriptionText"></p>
+            </div>
+          </div>
+
+
+
           <div v-for="(rubric, idx) of allCategories" :key="allCategories.id" class="relative max-w-7xl mx-auto">
             <!--          <div class="text-center">-->
             <!--            <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">-->
@@ -77,19 +87,12 @@
                       <p class="text-xl font-semibold text-gray-900">
                         {{ category.name }}
                       </p>
-                      <p v-for="(text, idx) of category.text" :key="text.id"
+                      <p v-if="category.text"
                          class="mt-3 text-base text-gray-500">
-                        {{ text.H2 }}
+                        {{ category.text.descriptionText }}
                       </p>
                       <p class="mt-2 text-base font-medium text-red-800 place-items-end">
-                        Подробнее &rarr;
-                        <!--                    <NuxtLink-->
-                        <!--                      :to="'products/' + category.slug"-->
-                        <!--                      @click.native="getProduct ([category.slug, allRubric])"-->
-                        <!--                      class="hover:underline"-->
-                        <!--                    >-->
-                        <!--                      Подробнее &rarr;-->
-                        <!--                    </NuxtLink>-->
+                        Выбрать &rarr;
                       </p>
                     </NuxtLink>
                   </div>
@@ -126,10 +129,60 @@
           </div>
         </div>
 
-        <!--    {{ new Date().toLocaleString()}}-->
+<!--            {{ new Date().toLocaleString()}}-->
       </div>
 
     </div>
+
+
+    <div class="relative my-8 py-8 bg-white overflow-hidden">
+      <div class="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
+        <div class="relative h-full text-lg max-w-prose mx-auto" aria-hidden="true">
+          <svg class="absolute top-12 left-full transform translate-x-32" width="404" height="384" fill="none" viewBox="0 0 404 384">
+            <defs>
+              <pattern id="74b3fd99-0a6f-4271-bef2-e80eeafdf357" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+              </pattern>
+            </defs>
+            <rect width="404" height="384" fill="url(#74b3fd99-0a6f-4271-bef2-e80eeafdf357)" />
+          </svg>
+          <svg class="absolute top-1/2 right-full transform -translate-y-1/2 -translate-x-32" width="404" height="384" fill="none" viewBox="0 0 404 384">
+            <defs>
+              <pattern id="f210dbf6-a58d-4871-961e-36d5016a0f49" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+              </pattern>
+            </defs>
+            <rect width="404" height="384" fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)" />
+          </svg>
+          <!--        <svg class="absolute bottom-12 left-full transform translate-x-32" width="404" height="384" fill="none" viewBox="0 0 404 384">-->
+          <!--          <defs>-->
+          <!--            <pattern id="d3eb07ae-5182-43e6-857d-35c643af9034" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">-->
+          <!--              <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />-->
+          <!--            </pattern>-->
+          <!--          </defs>-->
+          <!--          <rect width="404" height="384" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />-->
+          <!--        </svg>-->
+        </div>
+      </div>
+
+      <div v-if="allCategories[0].text" class="relative px-4 sm:px-6 lg:px-8">
+        <div class="text-lg max-w-prose mx-auto">
+          <h1>
+            <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-main sm:text-4xl" v-html="allCategories[0].text.titleText"></span>
+          </h1>
+          <p class="mt-8 text-xl text-gray-500 leading-8"  v-html="allCategories[0].text.text"></p>
+        </div>
+        <div class="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
+          <!--        <h3>Ждём вас!!!</h3>-->
+          <figure>
+            <!--          <img class="w-full rounded-lg" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&w=1310&h=873&q=80&facepad=3" alt="" width="1310" height="873">-->
+          </figure>
+          <!--        <p>Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>. Amet, massa quam varius orci dapibus volutpat cras. In amet eu ridiculus leo sodales cursus tristique. Tincidunt sed tempus ut viverra ridiculus non molestie. Gravida quis fringilla amet eget dui tempor dignissim. Facilisis auctor venenatis varius nunc, congue erat ac. Cras fermentum convallis quam.</p>-->
+          <!--        <p>Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit.</p>-->
+        </div>
+      </div>
+    </div>
+
   </div>
 
 </template>
@@ -166,8 +219,7 @@ export default {
 
   head() {
     return {
-      title: 'Стройматериалы' +
-        ' || ' + this.categoryName + ' в Нижнем Новгороде || ' + this.seoTitle,
+      title: 'Стройматериалы' + ' || ' + this.categoryName + ' в Нижнем Новгороде || ' + this.seoTitle,
       meta: [
         {
           hid: 'description',

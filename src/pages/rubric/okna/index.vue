@@ -61,11 +61,34 @@
 </template>
 
 <script>
+import {mapGetters} from "vuex";
+
 export default {
-  name: "index"
+  name: "index",
+
+  computed: {
+    seoTitle: function () {
+      return this.head.seo ? this.head.seo.title : 'Пластиковые окна';
+    },
+    seoDescription: function () {
+      return this.head.seo ? this.head.seo.description : 'Пластиковые окна, а так же раздвижные системы SLIDERS, перегородки, двери, фасады. Все виды монтажных работ.';
+    }
+
+  },
+
+
+  head() {
+    return {
+      title: this.seoTitle,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.seoDescription
+        }
+      ]
+    }
+  },
+
 }
 </script>
-
-<style scoped>
-
-</style>

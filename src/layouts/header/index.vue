@@ -5,7 +5,7 @@
     <header class="mr-2">
       <nav class="w-full mx-auto py-3 px-4 sm:px-4 lg:px-4" aria-label="Top">
         <div class="w-full flex lg:justify-between justify-center">
-          <div class="items-left justify-start sm:justify-center	text-base">
+          <div class="items-left justify-start sm:justify-center text-base">
 <!--            <a href="#">-->
 <!--              <span class="sr-only">Workflow</span>-->
 <!--              <img class="h-10 w-auto" src="https://tailwindui.com/img/logos/workflow-mark.svg?color=white" alt="">-->
