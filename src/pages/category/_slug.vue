@@ -53,15 +53,21 @@
         </div>
 
         <!-- This example requires Tailwind CSS v2.0+ -->
-        <div class="relative pt-8 pb-20 px-4 sm:px-6 lg:pt-8 lg:pb-12 lg:px-8">
+        <div class="relative pt-4 pb-4 px-4 sm:px-6 lg:pt-4 lg:pb-8 lg:px-8">
 
 
-          <div v-if="allCategories[0].text" class="relative px-8 sm:px-8 lg:px-8">
-            <div class="max-w-7xl">
-              <p class="mt-6 text-2xl text-center text-gray-900 leading-8"  v-html="allCategories[0].text.descriptionText"></p>
+
+          <!-- This example requires Tailwind CSS v2.0+ -->
+          <div class="py-1 relative bg-gray-700 shadow-lg rounded-lg">
+<!--          <div class="py-1 relative bg-gradient-to-b from-gray-50 via-gray-800 to-gray-50 shadow-lg rounded-lg">-->
+            <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+              <div v-if="allCategories[0].text" class="text-center px-8">
+                <p class="font-medium text-white text-lg">
+                    <span v-html="allCategories[0].text.descriptionText"></span>
+                </p>
+              </div>
             </div>
           </div>
-
 
 
           <div v-for="(rubric, idx) of allCategories" :key="allCategories.id" class="relative max-w-7xl mx-auto">
@@ -74,9 +80,9 @@
             <!--            </p>-->
             <!--          </div>-->
             <!--          <hr class="mt-8">-->
-            <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+            <div class="mt-8 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
               <div v-for="(category, idx) of rubric.category" :key="category.id"
-                   class=" flex flex-col rounded-lg shadow-lg overflow-hidden ">
+                   class=" flex flex-col rounded-lg shadow-lg overflow-hidden border-2">
                 <!--            <div class="flex-shrink-0">-->
                 <!--              <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixqx=IrF17Golbw&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt="">-->
                 <!--            </div>-->
