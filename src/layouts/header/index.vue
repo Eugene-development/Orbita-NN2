@@ -2,17 +2,17 @@
   <div>
 
     <!-- This example requires Tailwind CSS v2.0+ -->
-    <header class="mr-2">
-      <nav class="w-full mx-auto py-3 px-4 sm:px-4 lg:px-4" aria-label="Top">
+    <header class="mr-2 bg-gray-50">
+      <nav class="w-full mx-auto py-2 px-4 sm:px-4 lg:px-4" aria-label="Top">
         <div class="w-full flex lg:justify-between justify-center">
-          <div class="items-left justify-start sm:justify-center text-base">
+          <div class="items-left justify-start sm:justify-center text-sm">
 <!--            <a href="#">-->
 <!--              <span class="sr-only">Workflow</span>-->
 <!--              <img class="h-10 w-auto" src="https://tailwindui.com/img/logos/workflow-mark.svg?color=white" alt="">-->
 <!--            </a>-->
             <div class="flex lg:ml-8 space-x-8 ">
               <div class="flex items-center">
-                <svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor"
+                <svg aria-hidden="true" class="h-5 w-5" fill="none" stroke="currentColor"
                      viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
@@ -24,7 +24,7 @@
                 </p>
               </div>
               <div class="flex items-center hidden lg:flex">
-                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                      xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round"
                         stroke-linejoin="round"
@@ -35,7 +35,7 @@
                 </p>
               </div>
               <div class="flex items-center hidden lg:flex">
-                <svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor"
+                <svg aria-hidden="true" class="h-5 w-5" fill="none" stroke="currentColor"
                      viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
@@ -79,7 +79,7 @@
 
 
 
-          <div class=" flex space-x-4 hidden lg:flex">
+          <div class="flex space-x-4 hidden lg:flex">
 <!--            <div class="flex items-center">-->
 <!--              <svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor"-->
 <!--                   viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">-->
@@ -93,7 +93,7 @@
 
 
             <div class="flex items-center">
-              <svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor"
+              <svg aria-hidden="true" class="w-5 h-5" fill="none" stroke="currentColor"
                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
@@ -103,7 +103,7 @@
               <NuxtLink
                 @click.native="cart()"
                 to="/shop/cart"
-                class="ml-2">
+                class="ml-2 text-sm">
                 Корзина ({{lengthCart}})
               </NuxtLink>
             </div>
@@ -185,35 +185,29 @@
                   type="button">
             <span class="sr-only">Open menu</span>
             <!-- Heroicon name: outline/menu -->
-            <svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor"
+            <svg aria-hidden="true" class="h-5 w-5" fill="none" stroke="currentColor"
                  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
             </svg>
           </button>
         </div>
-        <nav class="hidden md:flex space-x-10">
-          <NuxtLink class="pt-2 text-base font-medium text-gray-600 hover:text-gray-900"
-                    to="/">
+        <nav class="hidden md:flex space-x-10 pt-2 text-xl font-medium text-gray-600 hover:text-gray-900">
+          <NuxtLink to="/">
             Главная
           </NuxtLink>
-          <NuxtLink class="pt-2 text-base font-medium text-gray-600 hover:text-gray-900"
-                    to="/information/payment">
+          <NuxtLink to="/information/payment">
             Оплата
           </NuxtLink>
-          <NuxtLink class="pt-2 text-base font-medium text-gray-600 hover:text-gray-900"
-                    to="/information/delivery">
+          <NuxtLink to="/information/delivery">
             Доставка
           </NuxtLink>
-          <NuxtLink class="pt-2 text-base font-medium text-gray-600 hover:text-gray-900"
-                    to="/information/movers">
+          <NuxtLink to="/information/movers">
             Грузчики
           </NuxtLink>
-          <NuxtLink class="pt-2 text-base font-medium text-gray-600 hover:text-gray-900"
-                    to="/information/contact">
+          <NuxtLink to="/information/contact">
             Контакты
           </NuxtLink>
-          <a href="https://vk.com/orbita_stroy" aria-current="page" target="_blank"
-             class="pt-2 text-base font-medium text-gray-600 hover:text-gray-900">
+          <a href="https://vk.com/orbita_stroy" aria-current="page" target="_blank">
             VK
           </a>
 
@@ -253,7 +247,7 @@
     </div>
 
     <!-- This example requires Tailwind CSS v2.0+ -->
-    <div class="bg-yellow-50 pt-6 sm:pt-8">
+    <div class="bg-gray-50 pt-6 sm:pt-8">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto text-center">
           <h2 class="text-3xl font-extrabold text-gray-800 sm:text-4xl">
@@ -266,14 +260,14 @@
       </div>
       <div class="mt-6 pb-4 bg-white sm:pb-8">
         <div class="relative">
-          <div class="absolute inset-0 h-1/2 bg-yellow-50"></div>
+          <div class="absolute inset-0 h-1/2 bg-gray-50"></div>
           <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="w-full mx-auto">
               <dl class="rounded-lg bg-white shadow-lg lg:grid lg:grid-cols-7">
                 <NuxtLink v-for="(head, idx) of allHeads" :key="allHeads.id"
                           :to="'/rubric/' + head.slug"
                           class="flex flex-col border-b border-gray-200 p-4 text-center sm:border-0 sm:border-r sm:border-l">
-                  <dt class="order-2 mt-2 text-base leading-6 font-medium text-gray-800">
+                  <dt class="order-2 mt-1 text-base leading-6 font-medium text-gray-800">
                     {{ head.name }}
                   </dt>
                   <!--                  <dd class="order-1 text-5xl font-extrabold text-indigo-600">-->
@@ -283,7 +277,7 @@
                 <NuxtLink
                           to="/rubric/okna"
                           class="flex flex-col border-b border-gray-200 p-4 text-center sm:border-0 sm:border-r sm:border-l">
-                  <dt class="order-2 mt-2 text-base leading-6 font-medium text-gray-800">
+                  <dt class="order-2 mt-1 text-base leading-6 font-medium text-gray-800">
                     Окна
                   </dt>
                   <!--                  <dd class="order-1 text-5xl font-extrabold text-indigo-600">-->

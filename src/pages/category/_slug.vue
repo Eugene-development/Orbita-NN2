@@ -2,7 +2,7 @@
   <div class="">
 
     <div v-for="(rubric, idx) of allCategories" :key="allCategories.id">
-      <div class="p-10 mx-auto sm:px-6 lg:px-8 bg-gradient-to-b from-white to-yellow-50 shadow-lg mb-4">
+      <div class="p-10 mx-auto sm:px-6 lg:px-8 bg-gradient-to-b from-white via-gray-100 to-white shadow-lg mb-4">
         <div class="flex flex-col text-center w-full">
           <h1 class=" text-5xl font-medium title-font text-gray-900">{{ rubric.name }} в Нижнем Новгороде</h1>
         </div>
@@ -58,11 +58,11 @@
 
 
           <!-- This example requires Tailwind CSS v2.0+ -->
-          <div class="py-1 relative bg-gray-700 shadow-lg rounded-lg">
+          <div class="py-1 relative shadow-lg rounded-lg border-2">
 <!--          <div class="py-1 relative bg-gradient-to-b from-gray-50 via-gray-800 to-gray-50 shadow-lg rounded-lg">-->
             <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
               <div v-if="allCategories[0].text" class="text-center px-8">
-                <p class="font-medium text-white text-lg">
+                <p class="font-medium text-gray-800 text-xl">
                     <span v-html="allCategories[0].text.descriptionText"></span>
                 </p>
               </div>
@@ -172,9 +172,9 @@
       </div>
 
       <div v-if="allCategories[0].text" class="relative px-4 sm:px-6 lg:px-8">
-        <div class="text-lg max-w-prose mx-auto">
+        <div class="max-w-prose mx-auto">
           <h1>
-            <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-main sm:text-4xl" v-html="allCategories[0].text.titleText"></span>
+            <span class="mt-2 block text-2xl text-center leading-8 font-extrabold tracking-tight text-gray-800 sm:text-3xl" v-html="allCategories[0].text.titleText"></span>
           </h1>
           <p class="mt-8 text-xl text-gray-500 leading-8"  v-html="allCategories[0].text.text"></p>
         </div>

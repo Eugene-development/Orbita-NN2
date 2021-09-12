@@ -1,6 +1,6 @@
 <template>
 <div>
-  <div class="w-screen  py-20 bg-yellow-100">
+  <div class="w-screen  py-20 bg-gray-50">
     <div class="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
       <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
         <img class="h-22" src="https://lumen-image-bucket.s3.eu-central-1.amazonaws.com/brands/1.png" alt="Tuple">
