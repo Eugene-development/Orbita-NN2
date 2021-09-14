@@ -128,7 +128,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.products.name + 'в наличии в Нижнем Новгороде. ' + this.seoDescription
+          content: this.products.name + ' в наличии в Нижнем Новгороде. ' + this.seoDescription
         }
       ]
     }
