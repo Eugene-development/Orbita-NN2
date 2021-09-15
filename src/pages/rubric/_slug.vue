@@ -15,7 +15,7 @@
               {{ head.name }}
             </h1>
             <p class="text-xl text-gray-700">
-              Выберите интересующую вас рубрику в это разделе.
+              Выберите интересующую вас рубрику в этом разделе.
             </p>
           </div>
         </div>
@@ -27,13 +27,13 @@
             <div class="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-3">
               <div v-for="(rubric, idx) of head.rubric" :key="rubric.id"
                    class="flex flex-col rounded-lg shadow-lg overflow-hidden border-2">
-                <div class="px-6 py-8  sm:p-10 sm:pb-6">
+                <div class="px-6 py-8 text-center sm:p-10 sm:pb-6">
                   <div>
-                    <h3 class="inline-flex px-4 py-1 rounded-full text-sm font-semibold tracking-wide uppercase bg-indigo-50 text-indigo-900" id="tier-standard">
+                    <h3 class="inline-flex px-8 py-1 rounded-full text-sm  font-semibold tracking-wide uppercase bg-indigo-50 text-indigo-900" id="tier-standard">
                       {{ head.name }}
                     </h3>
                   </div>
-                  <div class="mt-4 flex items-baseline text-2xl font-extrabold">
+                  <div class="mt-4  text-center items-baseline text-2xl font-extrabold">
                     {{ rubric.name }}
                   </div>
 <!--                  <p class="mt-5 text-lg text-gray-500">-->
