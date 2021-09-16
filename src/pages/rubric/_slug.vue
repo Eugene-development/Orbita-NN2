@@ -140,7 +140,6 @@ export default {
     })
   },
 
-
   computed: {
     ...mapGetters({
       head: 'catalog/rubric/head',
