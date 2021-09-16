@@ -1,11 +1,9 @@
-import {forEach} from 'lodash';
-import {find} from 'lodash';
+import { forEach } from 'lodash';
+import { find } from 'lodash';
 
 export const state = () => ({
-  allCategories: [],
   products: [],
   pathAWS: '',
-  rubricId: null,
   categoryId: null,
 
 
@@ -20,29 +18,6 @@ export const state = () => ({
 
 export const actions = {
 
-  async getCategories({commit, state}, payload) {
-
-    //TODO токены
-
-    // await this.$axios.setToken('1', 'Bearer')
-    // this.$axios.setHeader('Authorization', '1');
-    // this.$axios.setToken('1');
-
-
-
-
-    //TODO а как на счёт искать по слагу на бэке?
-    //Получил Id категории по слагу в пейлоаде
-    const rubrics = await this.$axios.$get('get-all-rubric', state.apiCRUD);
-
-    forEach(rubrics, function (value) {
-      const {id} = find(value, {'slug': payload.slug});
-      commit('RUBRIC_ID', id);
-    });
-
-    const {data} = await this.$axios.$get('get-where-rubric-category-count-text/' + state.rubricID, state.apiCRUD);
-    commit('ALL_CATEGORIES', data);
-  },
 
   async getProducts({commit, state}, payload) {
 
@@ -74,16 +49,13 @@ export const actions = {
 
 
 export const mutations = {
-  ALL_CATEGORIES: (state, data) => state.allCategories = data,
   PRODUCTS: (state, data) => state.products = data,
-  RUBRIC_ID: (state, id) => state.rubricID = id,
   CATEGORY_ID: (state, id) => state.categoryId = id,
   PATH_AWS: (state, pathAWS) => state.pathAWS = pathAWS,
 
 };
 
 export const getters = {
-  allCategories: state => state.allCategories,
   products: state => state.products,
   pathAWS: state => state.pathAWS,
 };

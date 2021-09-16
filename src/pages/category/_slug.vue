@@ -1,10 +1,10 @@
 <template>
   <div class="">
 
-    <div v-for="(rubric, idx) of allCategories" :key="allCategories.id">
+    <div >
       <div class="p-10 mx-auto sm:px-6 lg:px-8 bg-gradient-to-b from-white via-gray-100 to-white shadow-lg mb-4">
         <div class="flex flex-col text-center w-full">
-          <h1 class=" text-5xl font-medium title-font text-gray-900">{{ rubric.name }} в Нижнем Новгороде</h1>
+          <h1 class=" text-5xl font-medium title-font text-gray-900">{{ rubric[0].name }} в Нижнем Новгороде</h1>
         </div>
       </div>
 
@@ -20,7 +20,7 @@
             <!--              stroke-width="2"/>-->
             <!--          </svg>-->
             <div class="text-gray-900 text-2xl">
-              <strong>{{ rubric.name }}</strong>
+              <strong>{{ rubric[0].name }}</strong>
             </div>
           </div>
 
@@ -29,7 +29,7 @@
             <nav aria-label="Sidebar" class="flex-1 px-2 space-y-1">
               <!-- Current: "bg-gray-100 text-gray-900", Default: "text-gray-600 hover:bg-gray-50 hover:text-gray-900" -->
 
-              <NuxtLink v-for="(category, idx) of rubric.category" :key="category.id"
+              <NuxtLink v-for="(category, idx) of rubric[0].category" :key="category.id"
                         :to="'/products/' + category.slug"
                         class="text-gray-600 hover:bg-gray-100 hover:text-gray-900 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
                 <!-- Heroicon name: outline/folder -->
@@ -61,16 +61,16 @@
           <div class="py-1 relative shadow-lg rounded-lg border-2">
 <!--          <div class="py-1 relative bg-gradient-to-b from-gray-50 via-gray-800 to-gray-50 shadow-lg rounded-lg">-->
             <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
-              <div v-if="allCategories[0].text" class="text-center px-8">
+              <div v-if="rubric[0].text" class="text-center px-8">
                 <p class="font-medium text-gray-800 text-xl">
-                    <span v-html="allCategories[0].text.descriptionText"></span>
+                    <span v-html="rubric[0].text.descriptionText"></span>
                 </p>
               </div>
             </div>
           </div>
 
 
-          <div v-for="(rubric, idx) of allCategories" :key="allCategories.id" class="relative max-w-7xl mx-auto">
+          <div  class="relative max-w-7xl mx-auto">
             <!--          <div class="text-center">-->
             <!--            <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">-->
             <!--              {{ rubric.name }}-->
@@ -81,7 +81,7 @@
             <!--          </div>-->
             <!--          <hr class="mt-8">-->
             <div class="mt-8 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
-              <div v-for="(category, idx) of rubric.category" :key="category.id"
+              <div v-for="(category, idx) of rubric[0].category" :key="category.id"
                    class=" flex flex-col rounded-lg shadow-lg overflow-hidden border-2">
                 <!--            <div class="flex-shrink-0">-->
                 <!--              <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixqx=IrF17Golbw&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt="">-->
@@ -171,12 +171,12 @@
         </div>
       </div>
 
-      <div v-if="allCategories[0].text" class="relative px-4 sm:px-6 lg:px-8">
+      <div v-if="rubric[0].text" class="relative px-4 sm:px-6 lg:px-8">
         <div class="max-w-prose mx-auto">
           <h1>
-            <span class="mt-2 block text-2xl text-center leading-8 font-extrabold tracking-tight text-gray-800 sm:text-3xl" v-html="allCategories[0].text.titleText"></span>
+            <span class="mt-2 block text-2xl text-center leading-8 font-extrabold tracking-tight text-gray-800 sm:text-3xl" v-html="rubric[0].text.titleText"></span>
           </h1>
-          <p class="mt-8 text-xl text-gray-500 leading-8"  v-html="allCategories[0].text.text"></p>
+          <p class="mt-8 text-xl text-gray-500 leading-8"  v-html="rubric[0].text.text"></p>
         </div>
         <div class="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
           <!--        <h3>Ждём вас!!!</h3>-->
@@ -201,24 +201,23 @@ export default {
   //   return /^\d+$/.test(params.id);
   // },
   async asyncData({store, params}) {
-    await store.dispatch('catalog/category/getCategories', {
+    await store.dispatch('catalog/rubric/getRubric', {
       slug: params.slug
     })
   },
 
-
   computed: {
     ...mapGetters({
-      allCategories: 'catalog/category/allCategories',
+      rubric: 'catalog/rubric/rubric',
     }),
     categoryName: function () {
-      return this.allCategories[0].name;
+      return this.rubric[0].name;
     },
     seoTitle: function () {
-      return this.allCategories.seo ? this.allCategories.seo.title : 'Строительные и отделочные материалы';
+      return this.rubric.seo ? this.rubric.seo.title : 'Строительные и отделочные материалы';
     },
     seoDescription: function () {
-      return this.allCategories.seo ? this.allCategories.seo.description : 'Строительные и отделочные материалы в Нижнем Новгороде и области';
+      return this.rubric.seo ? this.rubric.seo.description : 'Строительные и отделочные материалы в Нижнем Новгороде и области';
     }
   },
 

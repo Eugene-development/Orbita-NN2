@@ -1,26 +1,47 @@
-import {find} from 'lodash';
-
+import {find, forEach} from "lodash";
 
 export const state = () => ({
-  head: [],
-  apiCRUD: {baseURL: process.env.API_CRUD}
+  rubric: [],
+  rubricId: null,
+
+  apiCRUD: { baseURL: process.env.API_CRUD }
 });
 
 export const actions = {
-  async getHead({commit, state}, payload) {
+  async getRubric({commit, state}, payload) {
 
-    const { data } = await this.$axios.$get('get-all-head-rubric', state.apiCRUD);
-    const head = find(data, {'slug': payload.slug});
-    commit('HEAD', head);
+    //TODO токены
 
-    // console.log(rubric)
+    // await this.$axios.setToken('1', 'Bearer')
+    // this.$axios.setHeader('Authorization', '1');
+    // this.$axios.setToken('1');
+
+
+
+
+    //TODO а как на счёт искать по слагу на бэке?
+    //Получил Id категории по слагу в пейлоаде
+    const rubrics = await this.$axios.$get('get-all-rubric', state.apiCRUD);
+
+    forEach(rubrics, function (value) {
+      const {id} = find(value, {'slug': payload.slug});
+      commit('RUBRIC_ID', id);
+    });
+
+    const {data} = await this.$axios.$get('get-where-rubric-category-count-text/' + state.rubricID, state.apiCRUD);
+    commit('RUBRIC', data);
   },
+
 };
 
 export const mutations = {
-  HEAD: (state, head) => state.head = head,
+  RUBRIC: (state, data) => state.rubric = data,
+  RUBRIC_ID: (state, id) => state.rubricID = id,
+
 };
 
 export const getters = {
-  head: state => state.head,
+  rubric: state => state.rubric,
+
+
 };

@@ -135,14 +135,14 @@ import { mapActions , mapGetters} from "vuex";
 export default {
   name: "index",
   async asyncData({store, params}) {
-    await store.dispatch('catalog/rubric/getHead', {
+    await store.dispatch('catalog/head/getHead', {
       slug: params.slug
     })
   },
 
   computed: {
     ...mapGetters({
-      head: 'catalog/rubric/head',
+      head: 'catalog/head/head',
     }),
     rubricName: function () {
       return this.head.name;
