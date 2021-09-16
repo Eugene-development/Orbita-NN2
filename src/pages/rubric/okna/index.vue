@@ -68,12 +68,11 @@ export default {
 
   computed: {
     seoTitle: function () {
-      return this.head.seo ? this.head.seo.title : 'Пластиковые окна';
+      return 'Пластиковые окна';
     },
     seoDescription: function () {
-      return this.head.seo ? this.head.seo.description : 'Пластиковые окна, а так же раздвижные системы SLIDERS, перегородки, двери, фасады. Все виды монтажных работ.';
+      return 'Пластиковые окна, а так же раздвижные системы SLIDERS, перегородки, двери, фасады. Все виды монтажных работ.';
     }
-
   },
 
 

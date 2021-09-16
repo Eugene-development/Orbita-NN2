@@ -62,7 +62,7 @@
               <div class="mt-4">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Цемент и универсальные смеси</h3>
                 <h2 class="text-gray-900 title-font text-base font-medium">Пескобетон м-300</h2>
-                <p class="mt-1">125 руб/шт (25 кг)</p>
+                <p class="mt-1">105 руб/шт (25 кг)</p>
               </div>
             </NuxtLink>
 
@@ -77,7 +77,7 @@
               <div class="mt-4">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Штукатурка</h3>
                 <h2 class="text-gray-900 title-font text-base font-medium">ШТУКАТУРНАЯ СМЕСЬ "ЕК" TG 40</h2>
-                <p class="mt-1">373 руб/шт (30 кг)</p>
+                <p class="mt-1">399 руб/шт (30 кг)</p>
               </div>
             </NuxtLink>
 
@@ -91,7 +91,7 @@
               <div class="mt-4">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Плита ОСБ</h3>
                 <h2 class="text-gray-900 title-font text-base font-medium">Плита ОСБ-3 2500*1250*9мм</h2>
-                <p class="mt-1">2200 руб/шт</p>
+                <p class="mt-1">880 руб/шт</p>
               </div>
             </NuxtLink>
 
@@ -105,7 +105,7 @@
               <div class="mt-4">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Профнастил оцинкованный</h3>
                 <h2 class="text-gray-900 title-font text-base font-medium">Профнастил с-10 1160*2000</h2>
-                <p class="mt-1">1145 руб/шт</p>
+                <p class="mt-1">1255 руб/шт</p>
               </div>
             </NuxtLink>
 
@@ -119,7 +119,7 @@
               <div class="mt-4">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Затирка для швов</h3>
                 <h2 class="text-gray-900 title-font text-base font-medium">Затирка для швов "Церезит"</h2>
-                <p class="mt-1">185 руб/шт</p>
+                <p class="mt-1">220 руб/шт</p>
               </div>
             </NuxtLink>
 
