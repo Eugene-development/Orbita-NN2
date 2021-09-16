@@ -90,7 +90,7 @@
 <!--                      </p>-->
 <!--                    </li>-->
                   </ul>
-                  <div class="rounded-md shadow">
+                  <div class="mb-2 rounded-md shadow">
                     <NuxtLink
                       :to="'/category/' + rubric.slug"
                       class=" block w-full bg-gradient-to-r from-red-400 via-red-800 to-red-400 border border-red-900 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-red-900">

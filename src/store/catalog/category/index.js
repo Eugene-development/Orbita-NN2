@@ -17,10 +17,7 @@ export const state = () => ({
 });
 
 export const actions = {
-
-
   async getProducts({commit, state}, payload) {
-
 
     const pathAWS = state.pathAWSBucket.path
     commit('PATH_AWS', pathAWS)
