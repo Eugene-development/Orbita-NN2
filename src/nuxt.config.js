@@ -17,7 +17,8 @@ export default {
       { hid: 'description', name: 'description', content: 'База строительных и отделочных материалов в Нижнем Новгороде "Орбита-строй". В ассортименте стройматериалы, отделка, инструмент, электротовары, изоляция, сантехника. Если вы ищите строительные материалы в Нижнем новгороде, то добро пожаловать к нам.' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: 'https://lumen-image-bucket.s3.eu-central-1.amazonaws.com/logo/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      // { rel: 'icon', type: 'image/x-icon', href: 'https://lumen-image-bucket.s3.eu-central-1.amazonaws.com/logo/favicon.ico' }
     ]
   },
   /*
