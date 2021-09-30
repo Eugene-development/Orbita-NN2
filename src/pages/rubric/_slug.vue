@@ -103,25 +103,29 @@
             </div>
           </div>
         </div>
-<!--        <div class="mt-4 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:mt-5">-->
-<!--          <div class="max-w-md mx-auto lg:max-w-5xl">-->
-<!--            <div class="rounded-lg bg-gray-50 px-6 py-8 sm:p-10 lg:flex lg:items-center">-->
-<!--              <div class="flex-1">-->
-<!--                <div>-->
-<!--                  <h3 class="inline-flex px-4 py-1 rounded-full text-sm font-semibold tracking-wide uppercase bg-white text-gray-800">-->
-<!--                    Discounted-->
-<!--                  </h3>-->
-<!--                </div>-->
-<!--                <div class="mt-4 text-lg text-gray-600">Get full access to all of standard license features for solo projects that make less than $20k gross revenue for <span class="font-semibold text-gray-900">$29</span>.</div>-->
-<!--              </div>-->
-<!--              <div class="mt-6 rounded-md shadow lg:mt-0 lg:ml-10 lg:flex-shrink-0">-->
-<!--                <a href="#" class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">-->
-<!--                  Buy Discounted License-->
-<!--                </a>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
+        <div class="mt-4 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:mt-5">
+          <div class="max-w-md mx-auto lg:max-w-7xl">
+            <div  class="rounded-lg bg-gray-50 px-6 py-8 sm:p-10 lg:flex lg:items-center">
+<!--            <div v-for="(text, idx) of head.text" :key="text.id" class="rounded-lg bg-gray-50 px-6 py-8 sm:p-10 lg:flex lg:items-center">-->
+              <div class="flex-1">
+                <div>
+                  <h2 class="inline-flex px-4 py-1 rounded-full text-2xl font-semibold tracking-wide bg-white text-gray-800">
+                    {{ head.text.titleText }}
+                  </h2>
+                </div>
+                <div class="mt-4 text-lg text-gray-600" v-html="head.text.text"></div>
+              </div>
+            </div>
+            <div class="mt-6 rounded-md shadow lg:flex-shrink-0">
+              <NuxtLink to="/information/discount" class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-gray-50 hover:bg-gray-100">
+                {{ head.name }} со скидкой
+              </NuxtLink>
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
     </div>
 

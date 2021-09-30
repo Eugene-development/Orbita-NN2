@@ -43,7 +43,7 @@
         <h2 class=" mt-2 text-6xl leading-12 font-extrabold tracking-tight text-gray-800 sm:text-5xl sm:leading-10">
           Лидеры продаж
         </h2>
-        <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
+        <p class="mt-4 max-w-7xl text-xl leading-7 text-gray-500 lg:mx-auto">
           Если вы хотите строительные материалы купить со скидкой, то обратите внимание на наши топовые позиции с самыми привлекательными ценами. Наш строительный интеренет магазин предлагает комфортную ценовую политику для своих клиентов, поэтому это одна из лучших баз стройматериалов в Нижнем Новгороде.
         </p>
       </div>
