@@ -263,11 +263,11 @@
           <div class="absolute inset-0 h-1/2 bg-gray-50"></div>
           <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="w-full mx-auto">
-              <dl class="rounded-lg bg-white shadow-lg lg:grid lg:grid-cols-7">
+              <dl class="rounded-lg bg-white shadow-lg lg:grid lg:grid-cols-7 ">
                 <NuxtLink v-for="(head, idx) of allHeads" :key="allHeads.id"
                           :to="'/rubric/' + head.slug"
-                          class="flex flex-col border-b border-gray-200 p-4 text-center sm:border-0 sm:border-r sm:border-l">
-                  <dt class="order-2 mt-1 text-base leading-6 font-medium text-gray-800">
+                          class="flex flex-col border-b border-gray-200 p-4 text-center sm:border-0 sm:border-r sm:border-l hover:bg-gray-50">
+                  <dt class="order-2 mt-1 text-base leading-6 font-medium text-gray-800 hover:text-red-800">
                     {{ head.name }}
                   </dt>
                   <!--                  <dd class="order-1 text-5xl font-extrabold text-indigo-600">-->
@@ -276,8 +276,8 @@
                 </NuxtLink>
                 <NuxtLink
                           to="/rubric/okna"
-                          class="flex flex-col border-b border-gray-200 p-4 text-center sm:border-0 sm:border-r sm:border-l">
-                  <dt class="order-2 mt-1 text-base leading-6 font-medium text-gray-800">
+                          class="flex flex-col border-b border-gray-200 p-4 text-center sm:border-0 sm:border-r sm:border-l hover:bg-gray-50">
+                  <dt class="order-2 mt-1 text-base leading-6 font-medium text-gray-800 hover:text-red-800">
                     Окна
                   </dt>
                   <!--                  <dd class="order-1 text-5xl font-extrabold text-indigo-600">-->
