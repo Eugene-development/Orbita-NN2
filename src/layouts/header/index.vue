@@ -2,7 +2,7 @@
   <div>
 
     <!-- This example requires Tailwind CSS v2.0+ -->
-    <header class="mr-2 bg-gray-100">
+    <header class="mr-2 bg-gray-50">
       <nav class="w-full mx-auto py-2 px-4 sm:px-4 lg:px-4" aria-label="Top">
         <div class="w-full flex lg:justify-between justify-center">
           <div class="items-left justify-start sm:justify-center text-sm">
@@ -191,7 +191,7 @@
             </svg>
           </button>
         </div>
-        <nav class="hidden md:flex space-x-10 pt-2 text-xl font-medium text-gray-600 hover:text-gray-900">
+        <nav class="hidden md:flex space-x-10 pt-2 text-xl font-medium text-gray-800 hover:text-gray-900">
           <NuxtLink to="/">
             Главная
           </NuxtLink>
@@ -247,20 +247,20 @@
     </div>
 
     <!-- This example requires Tailwind CSS v2.0+ -->
-    <div class="bg-gray-100 pt-6 sm:pt-8">
+    <div class="bg-gray-50 pt-6 sm:pt-8">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto text-center">
           <h2 class="text-3xl font-extrabold text-gray-800 sm:text-4xl">
             Интернет-магазин строительных и отделочных материалов "Орбита-строй"
           </h2>
           <p class="mt-3 text-xl text-red-800 sm:mt-4">
-            При заказе через сайт для вас скидка 5%
+            При заказе через каталог стройматериалов на сайте для вас скидка 5%
           </p>
         </div>
       </div>
       <div class="mt-6 pb-4 bg-white sm:pb-8">
         <div class="relative">
-          <div class="absolute inset-0 h-1/2 bg-gray-100"></div>
+          <div class="absolute inset-0 h-1/2 bg-gray-50 border-b"></div>
           <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="w-full mx-auto">
               <dl class="rounded-lg bg-white shadow-lg lg:grid lg:grid-cols-7 ">
