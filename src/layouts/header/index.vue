@@ -253,21 +253,21 @@
           <h2 class="text-3xl font-extrabold text-gray-800 sm:text-4xl">
             Интернет-магазин строительных и отделочных материалов "Орбита-строй"
           </h2>
-          <p class="mt-3 text-xl text-red-800 sm:mt-4">
+          <p class="mt-3 text-xl text-red-900 sm:mt-4">
             При заказе через каталог стройматериалов на сайте для вас скидка 5%
           </p>
         </div>
       </div>
       <div class="mt-6 pb-4 bg-white sm:pb-8">
         <div class="relative">
-          <div class="absolute inset-0 h-1/2 bg-gray-50 border-b"></div>
+          <div class="absolute inset-0 h-1/2 bg-gray-50 border-b border-gray-200"></div>
           <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="w-full mx-auto">
               <dl class="rounded-lg bg-white shadow-lg lg:grid lg:grid-cols-7 ">
                 <NuxtLink v-for="(head, idx) of allHeads" :key="allHeads.id"
                           :to="'/rubric/' + head.slug"
-                          class="flex flex-col border-b border-gray-200 p-4 text-center sm:border-0 sm:border-r sm:border-l hover:bg-gray-50">
-                  <dt class="order-2 mt-1 text-base leading-6 font-medium text-gray-800 hover:text-red-800">
+                          class="flex flex-col bg-red-900 hover:bg-red-800 border-b border-red-200 p-4 text-center sm:border-0 sm:border-r sm:border-l">
+                  <dt class="order-2 mt-1 text-base leading-6 font-medium text-gray-50">
                     {{ head.name }}
                   </dt>
                   <!--                  <dd class="order-1 text-5xl font-extrabold text-indigo-600">-->
@@ -276,8 +276,8 @@
                 </NuxtLink>
                 <NuxtLink
                           to="/rubric/okna"
-                          class="flex flex-col border-b border-gray-200 p-4 text-center sm:border-0 sm:border-r sm:border-l hover:bg-gray-50">
-                  <dt class="order-2 mt-1 text-base leading-6 font-medium text-gray-800 hover:text-red-800">
+                          class="flex flex-col bg-red-900 hover:bg-red-800 border-b border-red-200 p-4 text-center sm:border-0 sm:border-r sm:border-l">
+                  <dt class="order-2 mt-1 text-base leading-6 font-medium text-gray-50">
                     Окна
                   </dt>
                   <!--                  <dd class="order-1 text-5xl font-extrabold text-indigo-600">-->
@@ -288,6 +288,7 @@
             </div>
           </div>
         </div>
+
       </div>
     </div>
 
@@ -296,7 +297,7 @@
     <!-- This example requires Tailwind CSS v2.0+ -->
 
     <nav class="flex border-b-2 border-t-2 py-2 " aria-label="Breadcrumb">
-      <div class="flex items-center space-x-4 mx-auto">
+      <div class="flex items-center space-x-4 mx-auto text-gray-900">
         <!--        -->
         <!--          <div class="flex items-center">-->
         <!--            <NuxtLink to="/information/map" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">-->
@@ -311,8 +312,7 @@
             <!--              <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"/>-->
             <!--            </svg>-->
             <NuxtLink to="/information/discount"
-                      class="ml-4 text-xs md:text-sm font-medium text-gray-600 hover:text-gray-700">
-              Скидки
+                      class="ml-4 text-xs md:text-sm font-medium hover:text-gray-700">Скидки
             </NuxtLink>
           </div>
 
@@ -323,7 +323,7 @@
               <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"/>
             </svg>
             <NuxtLink to="/information/testimonials" aria-current="page"
-                      class="ml-4 text-xs md:text-sm font-medium text-gray-600 hover:text-gray-700">Отзывы
+                      class="ml-4 text-xs md:text-sm font-medium">Отзывы
             </NuxtLink>
           </div>
 
@@ -334,7 +334,7 @@
               <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"/>
             </svg>
             <NuxtLink to="/information/partner" aria-current="page"
-                      class="ml-4 text-xs md:text-sm font-medium text-gray-600 hover:text-gray-700">Партнёры
+                      class="ml-4 text-xs md:text-sm font-medium hover:text-gray-700">Партнёры
             </NuxtLink>
           </div>
 
@@ -345,7 +345,7 @@
               <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"/>
             </svg>
             <NuxtLink to="/information/client" aria-current="page"
-                      class="ml-4 text-xs md:text-sm font-medium text-gray-600 hover:text-gray-700">Клиентам
+                      class="ml-4 text-xs md:text-sm font-medium hover:text-gray-700">Клиентам
             </NuxtLink>
           </div>
 
@@ -356,7 +356,7 @@
               <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"/>
             </svg>
             <NuxtLink to="/information/action" aria-current="page"
-                      class="ml-4 text-xs md:text-sm font-medium text-gray-600 hover:text-gray-700">Акции
+                      class="ml-4 text-xs md:text-sm font-medium hover:text-gray-700">Акции
             </NuxtLink>
           </div>
 
