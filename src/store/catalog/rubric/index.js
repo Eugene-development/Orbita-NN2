@@ -29,7 +29,7 @@ export const actions = {
     });
 
     const {data} = await this.$axios.$get('get-rubric/' + state.rubricID, state.apiCRUD);
-    commit('RUBRIC', data);
+    commit('RUBRIC', data[0]);
   },
 
 };

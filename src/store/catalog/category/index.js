@@ -31,7 +31,7 @@ export const actions = {
       commit('CATEGORY_ID', id);
     });
 
-    const {data} = await this.$axios.$get('get-WhCategory-HmProduct-HmImageProduct-HmTextProduct-CoProduct/' + state.categoryId, state.apiCRUD);
+    const {data} = await this.$axios.$get('get-category/' + state.categoryId, state.apiCRUD);
     commit('CATEGORY', data[0]);
 
 
