@@ -12,7 +12,7 @@
 <!--              Раздел-->
 <!--            </h2>-->
             <h1 class="text-3xl font-extrabold text-gray-900 sm:text-4xl lg:text-5xl">
-              {{ head.name }}
+              {{ head[0].name }}
             </h1>
             <p class="text-xl text-gray-700">
               Выберите интересующую вас рубрику в этом разделе.
@@ -25,12 +25,12 @@
           <div class="absolute inset-0 h-3/4"></div>
           <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-3">
-              <div v-for="(rubric, idx) of head.rubric" :key="rubric.id"
+              <div v-for="(rubric, idx) of head[0].rubric" :key="rubric.id"
                    class="flex flex-col rounded-lg shadow-lg overflow-hidden border-2">
                 <div class="px-6 py-8 text-center sm:p-10 sm:pb-6">
                   <div>
                     <h3 class="inline-flex px-8 py-1 rounded-full text-sm  font-semibold tracking-wide uppercase bg-indigo-50 text-indigo-900" id="tier-standard">
-                      {{ head.name }}
+                      {{ head[0].name }}
                     </h3>
                   </div>
                   <div class="mt-4  text-center items-baseline text-2xl font-extrabold">
@@ -110,15 +110,15 @@
               <div class="flex-1">
                 <div>
                   <h2 class="inline-flex px-4 py-1 rounded-full text-2xl font-semibold tracking-wide bg-white text-gray-800">
-                    {{ head.text.titleText }}
+                    {{ head[0].text.titleText }}
                   </h2>
                 </div>
-                <div class="mt-4 text-lg text-gray-600" v-html="head.text.text"></div>
+                <div class="mt-4 text-lg text-gray-600" v-html="head[0].text.text"></div>
               </div>
             </div>
             <div class="mt-6 rounded-md shadow lg:flex-shrink-0">
               <NuxtLink to="/information/discount" class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-gray-50 hover:bg-gray-100">
-                {{ head.name }} со скидкой
+                {{ head[0].name }} со скидкой
               </NuxtLink>
             </div>
 
