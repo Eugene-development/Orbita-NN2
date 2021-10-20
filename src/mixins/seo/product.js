@@ -2,7 +2,7 @@ export default {
 
   computed: {
     productName: function () {
-      return this.product[0].name;
+      return this.product.name;
     },
     seoTitle: function () {
       return this.product.seo ? this.product.seo.title : 'Строительные и отделочные материалы';
