@@ -28,7 +28,7 @@ export const actions = {
       commit('RUBRIC_ID', id);
     });
 
-    const {data} = await this.$axios.$get('get-where-rubric-category-count-text/' + state.rubricID, state.apiCRUD);
+    const {data} = await this.$axios.$get('get-rubric/' + state.rubricID, state.apiCRUD);
     commit('RUBRIC', data);
   },
 
