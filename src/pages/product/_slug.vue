@@ -61,7 +61,7 @@
               </div>
               <div class="flex border-t border-b mb-6 border-gray-200 py-2">
                 <span class="text-gray-500">Наличие на складе</span>
-                <span class="ml-auto text-gray-900">да</span>
+                <span class="ml-auto text-gray-900">Уточняйте у менеджера</span>
               </div>
               <div class="flex">
                 <span class="title-font font-medium text-4xl text-gray-900">{{ product.size[0].price.price }} руб/{{ product.unit }}.</span>
@@ -131,16 +131,30 @@ export default {
       visibleDelivery: 'catalog/products/visibleDelivery',
       productsInCart: 'catalog/cart/productsInCart',
     }),
-    // productName: function () {
-    //   return this.product[0].name;
-    // },
-    // seoTitle: function () {
-    //   return this.product.seo ? this.product.seo.title : 'Строительные и отделочные материалы';
-    // },
-    // seoDescription: function () {
-    //   return this.product.seo ? this.product.seo.description : 'Строительные и отделочные материалы в Нижнем Новгороде';
-    // }
+    productName: function () {
+      return this.product.name;
+    },
+    seoTitle: function () {
+      return this.product.seo ? this.product.seo.title : 'Строительные и отделочные материалы';
+    },
+    seoDescription: function () {
+      return this.product.seo ? this.product.seo.description : 'Строительные и отделочные материалы в Нижнем Новгороде';
+    }
   },
+
+  head() {
+    return {
+      title: this.productName + ' в Нижнем Новгороде || ' + this.seoTitle,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.productName + ' в наличии в Нижнем Новгороде. ' + this.seoDescription
+        }
+      ]
+    }
+  },
+
 
 
 }
