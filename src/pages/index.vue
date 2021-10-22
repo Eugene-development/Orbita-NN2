@@ -17,20 +17,11 @@
                 <h2 class="mt-6 max-w-lg mx-auto text-center text-3xl text-indigo-100 sm:max-w-3xl">
                   Стройматериалы, инструмент, сантехника, электрика и отделочные материалы<br> оптом и в розницу
                 </h2>
-
-                <!--                    <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">-->
-                <!--                      <div class="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">-->
-                <!--                        <NuxtLink to="/office/dashboard" class="flex items-center justify-center px-3 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8">-->
-                <!--                          Начать-->
-                <!--                        </NuxtLink>-->
-                <!--                        <button-->
-                <!--                          class="flex items-center justify-center px-3 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8"-->
-                <!--                          role="menuitem"-->
-                <!--                          @click.stop.once="logout">Выход-->
-                <!--                        </button>-->
-
-                <!--                      </div>-->
-                <!--                    </div>-->
+                <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
+                    <NuxtLink to="/information/action" class="font-semibold	tracking-wider flex items-center justify-center px-3 py-3 border border-transparent text-xl font-medium rounded-md shadow-sm text-red-800 bg-white hover:bg-indigo-50 sm:px-8">
+                      Наши акции
+                    </NuxtLink>
+                </div>
               </div>
             </div>
           </div>
