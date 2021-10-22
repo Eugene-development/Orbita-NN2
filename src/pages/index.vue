@@ -1,20 +1,20 @@
 <template>
   <div>
-        <div class="mt-4 relative">
-          <div class=" mx-auto">
-            <div class="relative shadow-xl  sm:overflow-hidden">
-              <div class="absolute inset-0">
+        <div class="mt-6 relative ">
+          <div class=" mx-auto ">
+            <div class="relative shadow-xl  sm:overflow-hidden ">
+              <div class="absolute inset-0 ">
                 <img alt="home" class="h-full w-full object-cover" src="/slider/slider4.jpg">
-                <div class="absolute inset-0 bg-gradient-to-r from-blueGray-300 to-blueGray-500"
+                <div class="absolute inset-0 bg-gradient-to-r from-gray-600 to-gray-500"
                      style="mix-blend-mode: multiply;"></div>
               </div>
               <div class="relative px-3 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                 <h1 class="mb-12 text-center text-5xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
                   <span class="block text-white mb-4">База строительных и отделочных материалов</span>
-                  <span class="block text-indigo-300">"Орбита-строй"</span>
+                  <span class="block text-indigo-200">"Орбита-строй"</span>
                 </h1>
                 <hr>
-                <h2 class="mt-6 max-w-lg mx-auto text-center text-3xl text-indigo-100 sm:max-w-3xl">
+                <h2 class="mt-6 max-w-lg mx-auto text-center text-3xl text-indigo-50 sm:max-w-3xl">
                   Стройматериалы, инструмент, сантехника, электрика и отделочные материалы<br> оптом и в розницу
                 </h2>
                 <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
