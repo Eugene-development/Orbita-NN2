@@ -113,7 +113,7 @@
 
 
         </div>
-        <div class="py-4 flex flex-wrap justify-center space-x-6 lg:hidden">
+        <div class="py-4 flex flex-wrap justify-center lg:hidden">
 
 <!--          <div class="flex items-center">-->
 <!--            <svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor"-->
@@ -319,7 +319,7 @@
 <!--              <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"/>-->
 <!--            </svg>-->
             <NuxtLink to="/information/testimonials" aria-current="page"
-                      class="ml-4 text-xs md:text-sm font-medium">Отзывы
+                      class="mx-2 text-xs md:text-sm font-medium">Отзывы
             </NuxtLink>
           </div>
 
@@ -330,7 +330,7 @@
               <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"/>
             </svg>
             <NuxtLink to="/information/partner" aria-current="page"
-                      class="ml-4 text-xs md:text-sm font-medium hover:text-gray-700">Партнёры
+                      class="mx-2 text-xs md:text-sm font-medium hover:text-gray-700">Партнёры
             </NuxtLink>
           </div>
 
@@ -341,7 +341,7 @@
               <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"/>
             </svg>
             <NuxtLink to="/information/client" aria-current="page"
-                      class="ml-4 text-xs md:text-sm font-medium hover:text-gray-700">Клиентам
+                      class="mx-2 text-xs md:text-sm font-medium hover:text-gray-700">Клиентам
             </NuxtLink>
           </div>
 
@@ -352,7 +352,7 @@
               <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"/>
             </svg>
             <NuxtLink to="/information/action" aria-current="page"
-                      class="ml-4 text-xs md:text-sm font-medium hover:text-gray-700">Акции
+                      class="mx-2 text-xs md:text-sm font-medium hover:text-gray-700">Акции
             </NuxtLink>
           </div>
 
