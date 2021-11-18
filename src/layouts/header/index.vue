@@ -43,7 +43,7 @@
                     stroke-width="2"/>
                 </svg>
                 <p class="ml-2">
-                  orbita88yuliya@mail.ru
+                  orbita88yuliya@yandex.ru
                 </p>
               </div>
 
@@ -163,7 +163,7 @@
     <!--    </div>-->
 
 
-    <div class="relative bg-gradient-to-r from-yellow-200 via-yellow-300 to-yellow-100 shadow-lg">
+    <div class="relative bg-gradient-to-tr from-yellow-100 via-yellow-300 to-yellow-100 shadow-lg">
       <div class="flex justify-between items-left mx-8 px-8 py-3 sm:px-6 md:justify-start md:space-x-10">
         <div class="flex justify-start lg:w-0 lg:flex-1">
           <NuxtLink to="/">
