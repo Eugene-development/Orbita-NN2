@@ -82,7 +82,7 @@
               <div class="mt-4">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Плита ОСБ</h3>
                 <h2 class="text-gray-900 title-font text-base font-medium">Плита ОСБ-3 2500*1250*9мм</h2>
-                <p class="mt-1">880 руб/шт</p>
+                <p class="mt-1">750 руб/шт</p>
               </div>
             </NuxtLink>
 
@@ -124,7 +124,7 @@
               <div class="mt-4">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Цемент и универсальные смеси</h3>
                 <h2 class="text-gray-900 title-font text-base font-medium">Цемент м-400 мордовцемент</h2>
-                <p class="mt-1">285 руб/шт (40 кг)</p>
+                <p class="mt-1">310 руб/шт (40 кг)</p>
               </div>
             </NuxtLink>
 
