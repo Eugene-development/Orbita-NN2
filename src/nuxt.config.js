@@ -2,7 +2,7 @@
 export default {
   mode: 'universal',
   server: {
-    port: 4112,
+    port: 3000,
     host: '0.0.0.0'
   },
 
