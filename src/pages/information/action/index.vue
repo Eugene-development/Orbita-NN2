@@ -17,8 +17,8 @@
 <!--              stroke-linecap="round" stroke-linejoin="round"-->
 <!--              stroke-width="2"/>-->
 <!--          </svg>-->
-          <p class="m-4 text-5xl font-bold text-red-900 animate-pulse">
-            8 (930) 688-88-62
+          <p class="m-4 text-4xl font-bold text-red-900 animate-pulse">
+            8 (800) 555-8-111 (звонок бесплатный)
           </p>
         </div>
 
