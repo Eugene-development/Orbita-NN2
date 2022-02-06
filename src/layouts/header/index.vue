@@ -43,7 +43,7 @@
                     stroke-width="2"/>
                 </svg>
                 <p class="ml-2">
-                  orbita88yuliya@yandex.ru
+                  info@orbita-stroy.com
                 </p>
               </div>
 
