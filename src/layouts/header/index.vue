@@ -20,7 +20,7 @@
                     stroke-width="2"/>
                 </svg>
                 <p class="ml-2 text-red-900 animate-pulse">
-                  8 (800) 555-8-111 (звонок бесплатный)
+                  8 (800) 555-8-111 (звонок бесплатный) или 8 (902) 303-36-54
                 </p>
               </div>
               <div class="flex items-center hidden lg:flex">
