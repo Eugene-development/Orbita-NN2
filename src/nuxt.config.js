@@ -19,6 +19,12 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       // { rel: 'icon', type: 'image/x-icon', href: 'https://lumen-image-bucket.s3.eu-central-1.amazonaws.com/logo/favicon.ico' }
+    ],
+    script: [
+      {
+        src: '//code-ya.jivosite.com/widget/2EfbaT2QPD',
+        async: "true"
+      }
     ]
   },
   /*
